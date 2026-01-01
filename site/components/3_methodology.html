@@ -1,0 +1,197 @@
+<h2>2. Methodological Framework</h2>
+
+<p>
+    Before examining individual experiments, it is essential to establish the conceptual tools 
+    required to distinguish what precision tests actually measure from what they are commonly 
+    claimed to measure. This section develops four key distinctions that structure the subsequent analysis.
+</p>
+
+<h3>2.1 Gauge-Invariant vs. Convention-Dependent Observables</h3>
+
+<p>
+    Not all physical quantities carry the same epistemological weight. A fundamental distinction 
+    exists between gauge-invariant observables—quantities that remain unchanged under coordinate 
+    transformations—and convention-dependent quantities that depend on arbitrary choices.
+</p>
+
+<div class="key-concept">
+    <h4>Definition 2.1: Gauge-Invariant Observable</h4>
+    <p>
+        An observable O is gauge-invariant if and only if its value is independent of the 
+        coordinate system, synchronization convention, or reference frame used to compute it.
+    </p>
+</div>
+
+<p>
+    Examples of gauge-invariant observables include:
+</p>
+<ul>
+    <li>Proper time elapsed along a worldline: τ = ∫ ds</li>
+    <li>Round-trip light travel time between two events</li>
+    <li>Frequency ratio of co-located clocks</li>
+    <li>Interference fringe count in closed optical paths</li>
+</ul>
+
+<p>
+    Examples of convention-dependent quantities include:
+</p>
+<ul>
+    <li>One-way speed of light (depends on synchronization)</li>
+    <li>Coordinate time difference between spatially separated events</li>
+    <li>Simultaneity of distant events</li>
+</ul>
+
+<p>
+    The critical insight is that most precision tests measure gauge-invariant quantities, 
+    which by construction do not directly probe the specific loop and correlation observables 
+    that differ between GR and TEP in the regime considered here.
+</p>
+
+<p>
+    The central claim of this paper is that most high-precision tests to date access only the 
+    gauge-invariant subset of observables on which GR and TEP explicitly agree.
+</p>
+
+<h3>2.2 Two-Way vs. One-Way Measurements</h3>
+
+<p>
+    The distinction between two-way (round-trip) and one-way measurements is not merely 
+    technical but fundamental to what can be tested.
+</p>
+
+<div class="key-concept">
+    <h4>The Reichenbach Synchronization Problem</h4>
+    <p>
+        The one-way speed of light cannot be measured without first establishing a 
+        synchronization convention between spatially separated clocks. But any synchronization 
+        convention presupposes a one-way speed of light. This circularity means the one-way 
+        speed is convention-dependent, not empirically determinable.
+    </p>
+</div>
+
+<p>
+    Two-way measurements avoid this circularity by using a single clock:
+</p>
+
+<div class="equation">$$t_{\text{round-trip}} = t_{\text{return}} - t_{\text{emit}} \quad \text{(single clock, gauge-invariant)}$$</div>
+
+<p>
+    However, this gauge-invariance comes at a cost: two-way measurements are inherently 
+    insensitive to direction-dependent effects. If light travels at c + v in one direction 
+    and c − v in the return direction, the round-trip time is:
+</p>
+
+<div class="equation">$$t_{RT} = \frac{L}{c+v} + \frac{L}{c-v} = \frac{2Lc}{c^2 - v^2} \approx \frac{2L}{c} + O\left(\frac{v^2}{c^2}\right)$$</div>
+
+<p>
+    The first-order direction-dependent term cancels exactly. This is not a limitation of 
+    experimental precision but a mathematical necessity: round-trip measurements are 
+    reciprocity-even and cannot probe reciprocity-odd effects.
+</p>
+
+<h3>2.3 Local vs. Global Tests</h3>
+
+<p>
+    A second crucial distinction separates local tests—performed within a single freely 
+    falling frame—from global tests that probe the structure of spacetime across extended regions.
+</p>
+
+<div class="key-concept">
+    <h4>The Equivalence Principle Hierarchy</h4>
+    <ul>
+        <li><em>Weak Equivalence Principle (WEP):</em> All bodies fall with the same acceleration in a gravitational field.</li>
+        <li><em>Einstein Equivalence Principle (EEP):</em> In local freely falling frames, non-gravitational physics is Lorentz-invariant.</li>
+        <li><em>Strong Equivalence Principle (SEP):</em> EEP extends to gravitational physics; local gravitational experiments are position-independent.</li>
+    </ul>
+</div>
+
+<p>
+    The TEP framework satisfies EEP exactly: in local freely falling frames, physics reduces 
+    to special relativity with invariant c. This means local tests—no matter how precise—cannot 
+    distinguish TEP from GR. The distinction arises in global and statistical observables: spatial structure 
+    in clock residuals and a GR-subtracted residual holonomy H<sub>resid</sub> defined by genuinely one-way, 
+    direction-reversing closed loops.
+</p>
+
+<p>
+    The operational criterion for "local" is whether the measurement region is small compared 
+    to the curvature scale. Modern optical clock experiments operate at millimeter scales 
+    where spacetime curvature is negligible—they are quintessentially local tests.
+</p>
+
+<h3>2.4 Single-Path vs. Multipath Configurations</h3>
+
+<p>
+    The final distinction concerns whether signals traverse a single path or multiple paths 
+    through spacetime.
+</p>
+
+<div class="key-concept">
+    <h4>Common-Mode Cancellation</h4>
+    <p>
+        When two signals traverse the same path, any path-dependent effects cancel in their 
+        comparison. This is why GW170817—where photons and gravitons traveled the same 
+        ~130 million light-year path—constrains only their differential propagation speed, 
+        not their common-mode time dilation.
+    </p>
+</div>
+
+<p>
+    TEP phenomenology arises from:
+</p>
+<ul>
+    <li>Multipath configurations (gravitational lensing, where rays sample different field values)</li>
+    <li>Statistical correlations (GNSS, where spatial structure ⟨φ(x)φ(x')⟩ is probed)</li>
+    <li>Closed loops with direction reversal (residual holonomy H<sub>resid</sub> after subtracting modeled GR loop effects)</li>
+</ul>
+
+<p>
+    Single-path, single-direction measurements—the dominant mode of precision tests—are 
+    structurally incapable of detecting these signatures.
+</p>
+
+<h3>2.5 Summary: The Measurement Taxonomy</h3>
+
+<table class="data-table">
+    <thead>
+        <tr>
+            <th>Measurement Type</th>
+            <th>Gauge Status</th>
+            <th>Sensitive To</th>
+            <th>Blind To</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Two-way, local</td>
+            <td>Invariant</td>
+            <td>Local Lorentz violation</td>
+            <td>Direction-dependence, global structure</td>
+        </tr>
+        <tr>
+            <td>Two-way, global</td>
+            <td>Invariant</td>
+            <td>PPN parameters (γ, β)</td>
+            <td>Odd-parity effects, synchronization</td>
+        </tr>
+        <tr>
+            <td>One-way, single-path</td>
+            <td>Convention-dependent</td>
+            <td>Relative clock rates</td>
+            <td>Absolute synchronization</td>
+        </tr>
+        <tr>
+            <td>One-way, closed-loop</td>
+            <td>Invariant</td>
+            <td>Residual holonomy H<sub>resid</sub>, path-dependence</td>
+            <td>—</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+    The final row—one-way closed-loop measurements—represents the only configuration capable 
+    of testing synchronization integrability. No high-precision relativistic-gravity test has 
+    directly targeted a convention-independent, direction-reversing, one-way loop observable 
+    designed to detect non-integrable synchronization beyond modeled GR terms.
+</p>
