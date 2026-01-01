@@ -1,6 +1,9 @@
 # What Do Precision Tests of General Relativity Actually Measure?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18109761.svg)](https://doi.org/10.5281/zenodo.18109761)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+![TEP-EXP: Precision Tests of General Relativity](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
 **Version:** v0.1 (Istanbul)  
@@ -9,6 +12,14 @@
 **DOI:** [10.5281/zenodo.18109761](https://doi.org/10.5281/zenodo.18109761)
 **Website:** [https://mlsmawfield.com/tep/exp/](https://mlsmawfield.com/tep/exp/)
 **Paper Series:** TEP Series: Paper 10 (Experimental Foundations)
+
+## Abstract
+
+Most high-precision tests of general relativity constrain reciprocity-even, largely local observables within single-metric frameworks. This leaves open a specific underdetermination between General Relativity (GR) and a class of two-metric disformal scalar-tensor modifications, exemplified here by the Temporal Equivalence Principle (TEP).
+
+This paper formalizes a measurement taxonomy distinguishing gauge-invariant from convention-dependent observables and identifies five recurring scope limitations in the experimental canon: (1) two-way measurement dominance; (2) local/global conflation; (3) model-dependent calibration; (4) the conformal loophole in multi-messenger constraints; and (5) theory-laden data reduction. These characteristics do not diminish the experimental achievements but indicate that, in many cases, the tests primarily constrain parameter space within assumed frameworks rather than systematically discriminating between alternatives.
+
+Discriminating observables—specifically loop asymmetries and spatial correlations—are proposed, together with experimental configurations capable of resolving the underdetermination. These include large-area triangle holonomy tests (targeting residual synchronization holonomy H_resid), interplanetary closed-loop timing, and matter-wave interferometry.
 
 ## The TEP Research Program
 
@@ -23,29 +34,7 @@
 | **Paper 7** | [TEP-UCD](https://github.com/matthewsmawfield/TEP-UCD) | Universal Critical Density | [10.5281/zenodo.18064366](https://doi.org/10.5281/zenodo.18064366) |
 | **Paper 8** | [TEP-RBH](https://github.com/matthewsmawfield/TEP-RBH) | The Soliton Wake | [10.5281/zenodo.18059251](https://doi.org/10.5281/zenodo.18059251) |
 | **Paper 9** | [TEP-SLR](https://github.com/matthewsmawfield/TEP-SLR) | Satellite Laser Ranging Validation | [10.5281/zenodo.18064582](https://doi.org/10.5281/zenodo.18064582) |
-| **Paper 10** | **TEP-EXP** (This repo) | What Do Precision Tests of General Relativity Actually Measure? (Istanbul v0.1) | [10.5281/zenodo.18109761](https://doi.org/10.5281/zenodo.18109761) |
-
-## Abstract
-
-Most high-precision tests of general relativity constrain reciprocity-even, largely local observables within single-metric frameworks. This leaves open a specific underdetermination between General Relativity (GR) and a class of two-metric disformal scalar-tensor modifications, exemplified here by the Temporal Equivalence Principle (TEP).
-
-This paper formalizes a measurement taxonomy distinguishing gauge-invariant from convention-dependent observables and identifies five recurring scope limitations in the experimental canon: (1) two-way measurement dominance; (2) local/global conflation; (3) model-dependent calibration; (4) the conformal loophole in multi-messenger constraints; and (5) theory-laden data reduction. These characteristics do not diminish the experimental achievements but indicate that, in many cases, the tests primarily constrain parameter space within assumed frameworks rather than systematically discriminating between alternatives.
-
-Discriminating observables—specifically loop asymmetries and spatial correlations—are proposed, together with experimental configurations capable of resolving the underdetermination. These include large-area triangle holonomy tests (targeting residual synchronization holonomy H_resid), interplanetary closed-loop timing, and matter-wave interferometry.
-
-Keywords: general relativity, experimental tests, underdetermination, synchronization, GPS, gravitational redshift, Shapiro delay, multi-messenger astronomy
-
-## Related Work
-
-- **TEP Theory (Paper 1):** [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911)
-- **TEP-GNSS I (Paper 2):** [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229)
-- **TEP-GNSS II (Paper 3):** [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141)
-- **TEP-GNSS III (Paper 4):** [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166)
-- **TEP-GL (Paper 5):** [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540)
-- **TEP-GTE (Paper 6):** [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832)
-- **TEP-UCD (Paper 7):** [10.5281/zenodo.18064366](https://doi.org/10.5281/zenodo.18064366)
-- **TEP-RBH (Paper 8):** [10.5281/zenodo.18059251](https://doi.org/10.5281/zenodo.18059251)
-- **TEP-SLR (Paper 9):** [10.5281/zenodo.18064582](https://doi.org/10.5281/zenodo.18064582)
+| **Paper 10** | **TEP-EXP** (This repo) | What Do Precision Tests of General Relativity Actually Measure? | [10.5281/zenodo.18109761](https://doi.org/10.5281/zenodo.18109761) |
 
 ## Key Arguments
 
