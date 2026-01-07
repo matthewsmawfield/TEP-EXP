@@ -1,0 +1,32 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "ScholarlyArticle",
+  "identifier": "https://doi.org/10.5281/zenodo.18109761",
+  "doi": "10.5281/zenodo.18109761",
+  "name": "What Do Precision Tests of General Relativity Actually Measure?",
+  "description": "Most high-precision tests of general relativity constrain reciprocity-even, largely local observables within single-metric frameworks. This leaves open a specific underdetermination between General Relativity (GR) and a class of two-metric disformal scalar-tensor modifications, exemplified here by the Temporal Equivalence Principle (TEP). This paper formalizes a measurement taxonomy distinguishing gauge-invariant from convention-dependent observables and identifies five recurring scope limitations in the experimental canon: (1) two-way measurement dominance; (2) local/global conflation; (3) model-dependent calibration; (4) the conformal loophole in multi-messenger constraints; and (5) theory-laden data reduction. These characteristics do not diminish the experimental achievements but indicate that, in many cases, the tests primarily constrain parameter space within assumed frameworks rather than systematically discriminating between alternatives. Discriminating observables are proposed, together with experimental configurations capable of resolving the underdetermination.",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Matthew Lukin",
+      "familyName": "Smawfield",
+      "@id": "https://orcid.org/0009-0003-8219-3159"
+    }
+  ],
+  "datePublished": "2025-12-31",
+  "dateModified": "2025-12-31",
+  "version": "0.1",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "codeRepository": "https://github.com/matthewsmawfield/TEP-EXP",
+  "url": "https://mlsmawfield.com/tep/exp/",
+  "keywords": [
+    "general relativity",
+    "experimental tests",
+    "underdetermination",
+    "synchronization",
+    "GPS",
+    "gravitational redshift",
+    "Shapiro delay",
+    "multi-messenger astronomy"
+  ]
+}
