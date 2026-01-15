@@ -21,6 +21,10 @@ This paper formalizes a measurement taxonomy distinguishing gauge-invariant from
 
 Discriminating observables—specifically loop asymmetries and spatial correlations—are proposed, together with experimental configurations capable of resolving the underdetermination. These include large-area triangle holonomy tests (targeting residual synchronization holonomy H_resid), interplanetary closed-loop timing, and matter-wave interferometry.
 
+## Key Findings
+
+Precision tests of GR predominantly constrain reciprocity-even, two-way observables and therefore underdetermine disformal two-metric theories that preserve local physics. Five structural blind spots are identified: two-way measurement dominance, local/global conflation, model-dependent calibration, the conformal loophole in multi-messenger constraints, and theory-laden data reduction. The paper proposes discriminating tests that directly target one-way, loop-dependent observables—triangle holonomy, interplanetary closed-loop timing, and continental-scale optical clock networks—providing falsifiable pathways to resolve the GR–TEP underdetermination.
+
 ## The TEP Research Program
 
 | Paper | Repository | Title | DOI |
