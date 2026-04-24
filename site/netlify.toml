@@ -49,11 +49,11 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[redirects]]
-  from = "/tep-gl"
+  from = "/tep-exp"
   to = "/"
   status = 301
 
 [[redirects]]
-  from = "/TEP-GL"
+  from = "/TEP-EXP"
   to = "/"
   status = 301

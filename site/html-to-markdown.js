@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * HTML to Markdown Converter for TEP-GL Site
+ * HTML to Markdown Converter for TEP-EXP Site
  * Converts the built static HTML site into a clean markdown document
  */
 
@@ -175,13 +175,13 @@ class HTMLToMarkdownConverter {
         
         if (rows.length === 0) return '';
         
-        // Create markdown table
+        // Create markdown table (simple format like Jakarta)
         let markdown = '\n';
         rows.forEach((row, index) => {
             markdown += '| ' + row.join(' | ') + ' |\n';
             if (index === 0) {
                 // Add separator row
-                markdown += '|' + row.map(() => ' --- ').join('|') + '|\n';
+                markdown += '|' + row.map(() => '---').join('|') + '|\n';
             }
         });
         markdown += '\n';
@@ -203,7 +203,7 @@ class HTMLToMarkdownConverter {
         const version = versionMatch ? versionMatch[1]
             .replace(/<[^>]+>/g, '')
             .replace(/^Version:\s*/i, '')
-            .trim() : 'v0.1 (Istanbul)';
+            .trim() : 'v0.2 (Istanbul)';
         
         const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>(.*?)<\/div>/i);
         const date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 31 December 2025';
@@ -276,7 +276,7 @@ class HTMLToMarkdownConverter {
             const markdown = this.buildMarkdownDocument(metadata, markdownContent);
             
             // Write to file
-            const outputPath = path.join(__dirname, '..', 'manuscript-tep-exp.md');
+            const outputPath = path.join(__dirname, '..', '9-TEP-EXP-v0.2-Istanbul.md');
             fs.writeFileSync(outputPath, markdown, 'utf8');
             
             console.log('✅ Markdown conversion complete!');
@@ -297,19 +297,26 @@ class HTMLToMarkdownConverter {
      * Build the complete markdown document with metadata
      */
     buildMarkdownDocument(metadata, content) {
-        const timestamp = new Date().toISOString().split('T')[0];
+        const now = new Date();
+        const timestamp = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
         
         // Clean up the title to remove the author part
         const cleanTitle = metadata.title.replace(' | Matthew Lukin Smawfield', '');
         
+        // Format date: keep original publish date, add update date
+        let formattedDate = metadata.date;
+        if (formattedDate.includes('First published:')) {
+            formattedDate = formattedDate.replace('First published: ', '');
+        }
+        // Extract just the original date part before any separator
+        const dateParts = formattedDate.split(' · ');
+        const originalDate = dateParts[0].trim();
+        
         return `# ${cleanTitle}
-
-**Author:** ${metadata.author}  
-**Version:** ${metadata.version}  
-**Date:** ${metadata.date}  
-**DOI:** ${metadata.doi}  
-**Generated:** ${timestamp}  
-**Paper Series:** TEP Series: Paper 10 (Experimental Foundations)
+**${metadata.author}**
+Version: ${metadata.version}
+First published: ${originalDate} · Last updated: ${timestamp}
+DOI: ${metadata.doi}
 
 ---
 

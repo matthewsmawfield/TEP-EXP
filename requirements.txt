@@ -1,5 +1,5 @@
-# TEP-RBH: Runaway Black Hole Analysis
-# Core stack for soliton wake modeling
+# TEP-EXP: Experimental Tests Analysis
+# Core stack for GR experimental test analysis
 
 # Astronomical computing
 astropy>=5.0.0
