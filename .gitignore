@@ -33,7 +33,6 @@ site/dist/
 *~
 .vscode/
 .idea/
-.DS_Store
 
 # Temporary files
 *.tmp

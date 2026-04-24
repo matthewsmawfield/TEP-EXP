@@ -1,4 +1,4 @@
-# robots.txt for TEP-RBH: The Soliton Wake
+# robots.txt for TEP-EXP: Precision Tests of General Relativity
 User-agent: *
 Allow: /
 

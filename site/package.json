@@ -1,8 +1,8 @@
 {
   "name": "tep-exp-site",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "What Do Precision Tests of General Relativity Actually Measure?",
-  "comment": "Package version matches manuscript version v0.1 (Istanbul)",
+  "comment": "Package version matches manuscript version v0.2 (Istanbul)",
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server.js",
