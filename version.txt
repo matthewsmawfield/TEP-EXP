@@ -1,4 +1,4 @@
-v0.2 (Istanbul) — Temporal Topology & Screening Formalism
+v0.3 (Istanbul) — Temporal Topology & Screening Formalism
 
 - Adopted continuous geometric screening nomenclature: Replaced discrete thin-shell language with the Temporal Topology / Temporal Shear framework, aligning the density-regime analysis with the v0.7 geometric formalization.
 - Identified the density-regime screening blind spot: Added the sixth structural limitation to the experimental canon, recognizing that high-density precision tests leave the unscreened low-density regime unconstrained.
