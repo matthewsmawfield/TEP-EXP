@@ -4,7 +4,7 @@
     General relativity stands as one of the most precisely tested theories in
     physics. From the gravitational redshift measurements of Pound and Rebka
     (1960) to the multi-messenger observations of GW170817 (2017), a century of
-    experiments has confirmed GR's predictions with extraordinary precision.
+    experiments has confirmed GR's predictions with high precision.
     Modern optical lattice clocks achieve fractional frequency comparisons at
     the 10<sup>−18</sup> level and below, detecting gravitational time dilation
     across millimeter height differences. The Cassini spacecraft measured the
@@ -136,9 +136,12 @@
         framework, not independent confirmation.
     </li>
     <li>
-        <em>The Conformal Loophole:</em> Multi-messenger constraints bound the
-        disformal sector of scalar-tensor theories while leaving the conformal
-        sector unconstrained.
+        <em>Single-Path Multi-Messenger Limitations:</em> GW170817-type observations
+        primarily constrain differential photon–graviton propagation and hence
+        disformal cone tilt. They do not directly constrain common-mode conformal
+        clock-rate structure along a shared path, although conformal scalar sectors
+        remain indirectly constrained by PPN, equivalence-principle, and
+        clock-comparison tests.
     </li>
     <li>
         <em>Theory-Laden Data Reduction:</em> Systematic corrections assume the
@@ -192,21 +195,24 @@
     <p>
         Sector map: The conformal factor A(φ) governs clock
         rates and spatial correlation structure; the disformal factor B(φ)
-        governs light-cone tilts and residual holonomy. GW170817 constrains the
-        disformal sector; the conformal sector remains unconstrained by
-        single-path multi-messenger observations.
+        governs light-cone tilts and residual holonomy. GW170817 primarily
+        constrains photon–graviton differential propagation and hence disformal
+        cone tilt. It does not directly constrain common-mode conformal clock-rate
+        structure along a shared path, although conformal scalar sectors remain
+        indirectly constrained by PPN, equivalence-principle, source-screening,
+        and clock-comparison tests.
     </p>
 
     <p>
         Screening and PPN compatibility: Rather than invoking
         discrete thin-shell boundaries, screening operates via the continuous
-        spatial profile of the chameleon field (Temporal Topology). The high
-        ambient density in deep potential wells suppresses the local field
-        gradient (Temporal Shear), ensuring short-range fifth-force suppression
-        while leaving the field light cosmologically. Near massive bodies, the
-        suppression of Temporal Shear reduces the effective scalar coupling to
-        α<sub>eff</sub> ≪ α<sub>0</sub>, cleanly preserving PPN bounds without
-        rigid boundary approximations.
+        spatial profile of the scalar time field, termed Temporal Topology.
+        The locally active gradient sector, Temporal Shear, is suppressed in
+        screened regimes by environmental state and boundary conditions, ensuring
+        short-range fifth-force suppression while leaving the field light
+        cosmologically. Near massive bodies, suppression of Temporal Shear
+        decouples local clock rates from the scalar field structure, cleanly
+        preserving PPN bounds without rigid boundary approximations.
     </p>
 
     <p>
@@ -225,7 +231,7 @@
         <em>matter metric</em> $\tilde{g}_{\mu\nu}$, related by a disformal map:
     </p>
     <div class="equation">
-        $$\tilde{g}_{\mu\nu} = A(\phi) g_{\mu\nu} + B(\phi) \nabla_\mu\phi
+        $$\tilde{g}_{\mu\nu} = A^2(\phi) g_{\mu\nu} + B(\phi) \nabla_\mu\phi
         \nabla_\nu\phi$$
     </div>
 
@@ -344,7 +350,7 @@
             <tr>
                 <td>Residual holonomy H<sub>resid</sub></td>
                 <td>0</td>
-                <td>0 if B = 0; 0.5–50 as if B ≠ 0 (MEO Triangle)</td>
+                <td>0 if B = 0 (conformal-only); ≠ 0 possible if B ≠ 0 (MEO Triangle). <em>Note: GW170817 bounds disformal coupling to B ≲ 10<sup>−19</sup>; triangle test probes whether B is nonzero at this level.</em></td>
                 <td>Untested (requires one-way closed loops)</td>
             </tr>
             <tr>
@@ -352,6 +358,12 @@
                 <td>N/A</td>
                 <td>CV < 30% across GPS/GLONASS/Galileo/BeiDou</td>
                 <td>Untested (requires raw data analysis)</td>
+            </tr>
+            <tr>
+                <td>Density-regime screening transition</td>
+                <td>None (no regime change predicted)</td>
+                <td>Active→screened transition at ρ<sub>c</sub></td>
+                <td>Altitude-varying optical clock network, wide-binary systems</td>
             </tr>
         </tbody>
     </table>
