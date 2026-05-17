@@ -6,8 +6,8 @@
 ![TEP-EXP: Precision Tests of General Relativity](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.3 (Istanbul)  
-**Date:** First published: 31 December 2025 · Last updated: 29 April 2026  
+**Version:** v0.4 (Istanbul)  
+**Date:** First published: 31 December 2025 · Last updated: 4 May 2026  
 **Status:** Preprint  
 **DOI:** [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760)
 **Website:** [https://mlsmawfield.com/tep/exp/](https://mlsmawfield.com/tep/exp/)
@@ -43,6 +43,9 @@ Precision tests of GR predominantly constrain reciprocity-even, two-way observab
 | **Paper 11** | [TEP-H0](https://github.com/matthewsmawfield/TEP-H0) | The Cepheid Bias: Resolving the Hubble Tension | [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) |
 | **Paper 12** | [TEP-JWST](https://github.com/matthewsmawfield/TEP-JWST) | Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies | [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) |
 | **Paper 13** | [TEP-WB](https://github.com/matthewsmawfield/TEP-WB) | Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries | [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) |
+| **Paper 15** | [TEP-EFA](https://github.com/matthewsmawfield/TEP-EFA) | Temporal Equivalence Principle: Temporal Shear in the Earth Flyby Anomaly | [10.5281/zenodo.19454863](https://doi.org/10.5281/zenodo.19454863) |
+| **Paper 16** | [TEP-J0437](https://github.com/matthewsmawfield/TEP-J0437) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454620](https://doi.org/10.5281/zenodo.19454620) |
+| **Paper 17** | [TEP-LLR](https://github.com/matthewsmawfield/TEP-LLR) | Lunar Laser Ranging and the Nordtvedt Effect | [10.5281/zenodo.19446029](https://doi.org/10.5281/zenodo.19446029) |
 
 ## Key Arguments
 
@@ -87,7 +90,7 @@ TEP-EXP/
 │   ├── public/                     # Static assets
 │   └── figures/                    # Generated plots
 ├── manuscripts/                    # Related manuscripts (PDF)
-├── 9-TEP-EXP-v0.3-Istanbul.md      # Generated manuscript (built from site/components)
+├── 9-TEP-EXP-v0.4-Istanbul.md      # Generated manuscript (built from site/components)
 └── VERSION.json                    # Version metadata
 ```
 
@@ -99,7 +102,7 @@ npm install
 npm run build
 ```
 
-The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0.3-Istanbul.md` at the repository root.
+The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0.4-Istanbul.md` at the repository root.
 
 ## Citation
 
@@ -110,7 +113,7 @@ The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0
   year         = {2025},
   doi          = {10.5281/zenodo.18109760},
   url          = {https://doi.org/10.5281/zenodo.18109760},
-  note         = {Preprint, Version v0.3 (Istanbul)}
+  note         = {Preprint, Version v0.4 (Istanbul)}
 }
 ```
 
