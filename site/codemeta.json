@@ -1,6 +1,9 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
-  "@type": "ScholarlyArticle",
+  "@type": [
+    "ScholarlyArticle",
+    "SoftwareSourceCode"
+  ],
   "identifier": "https://doi.org/10.5281/zenodo.18109760",
   "doi": "10.5281/zenodo.18109760",
   "name": "What Do Precision Tests of General Relativity Actually Measure?",
@@ -14,8 +17,8 @@
     }
   ],
   "datePublished": "2025-12-31",
-  "dateModified": "2026-04-29",
-  "version": "0.3",
+  "dateModified": "2026-05-04",
+  "version": "0.4",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "codeRepository": "https://github.com/matthewsmawfield/TEP-EXP",
   "url": "https://mlsmawfield.com/tep/exp/",
@@ -28,5 +31,8 @@
     "gravitational redshift",
     "Shapiro delay",
     "multi-messenger astronomy"
-  ]
+  ],
+  "developmentStatus": "active",
+  "runtimePlatform": "Python",
+  "applicationCategory": "Scientific/Research"
 }
