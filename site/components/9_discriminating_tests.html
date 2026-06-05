@@ -77,7 +77,7 @@
         The Raw Loop Holonomy is the directional difference of the sum of intervals around the loop:
     </p>
     <div class="equation">
-        $$H_{\text{raw}} \equiv \oint_{\circlearrowright} \Delta_{ij} - \oint_{\circlearrowleft} \Delta_{ji} = (\Delta_{AB} + \Delta_{BC} + \Delta_{CA}) - (\Delta_{AC} + \Delta_{CB} + \Delta_{BA})$$
+        $$H_{\rm raw} \equiv \oint_{\circlearrowright} \Delta_{ij} - \oint_{\circlearrowleft} \Delta_{ji} = (\Delta_{AB} + \Delta_{BC} + \Delta_{CA}) - (\Delta_{AC} + \Delta_{CB} + \Delta_{BA})$$
     </div>
 </div>
 
@@ -86,13 +86,13 @@
     <p>
         <strong>1. Invariance to Clock Offsets:</strong> Let each clock have a constant offset $\delta_i$ from coordinate time: $\tau_i(t) = t + \delta_i$. The term $\delta_i$ appears in one emission and one reception term in each direction.
         <br>In $\circlearrowright$: $(\delta_B - \delta_A) + (\delta_C - \delta_B) + (\delta_A - \delta_C) = 0$.
-        <br>Thus, $H_{\text{raw}}$ is strictly invariant to constant clock synchronization errors.
+        <br>Thus, $H_{\rm raw}$ is strictly invariant to constant clock synchronization errors.
     </p>
     <p>
         <strong>2. Decomposition:</strong> The observable decomposes into physical and systematic terms:
     </p>
     <div class="equation">
-        $$H_{\text{raw}} = H_{\text{Sagnac}} + H_{\text{Shapiro}} + H_{\text{GM}} + H_{\text{atm}} + H_{\text{inst}} + H_{\text{TEP}}$$
+        $$H_{\rm raw} = H_{\text{Sagnac}} + H_{\text{Shapiro}} + H_{\text{GM}} + H_{\text{atm}} + H_{\text{inst}} + H_{\rm TEP}$$
     </div>
     <ul>
         <li>$H_{\text{Sagnac}} \propto \mathbf{\Omega} \cdot \mathbf{A}$: Earth rotation (dominant, $\sim 100$ ns).</li>
@@ -100,7 +100,7 @@
         <li>$H_{\text{GM}}$: Gravito-magnetic/Lense-Thirring effects ($\sim 10^{-17}$ s).</li>
         <li>$H_{\text{atm}}$: Non-reciprocal atmospheric delays (requires dual-frequency/radiometry).</li>
         <li>$H_{\text{inst}}$: Non-reciprocal instrumental delays (fiber loops, transponders).</li>
-        <li><strong>$H_{\text{TEP}}$:</strong> The signal of interest (residual synchronization holonomy).</li>
+        <li><strong>$H_{\rm TEP}$:</strong> The signal of interest (residual synchronization holonomy).</li>
     </ul>
 </div>
 
@@ -112,9 +112,9 @@
     <h4>Measurement Recipe</h4>
     <ol>
         <li>Record emission and reception time tags for each directed link (A→B, B→C, C→A and reverse)</li>
-        <li>Compute $H_{\text{raw}}$ from tags using the estimator definition above</li>
-        <li>Model $H_{\text{GR}}$ using ephemerides, Earth-orientation parameters, and propagation models</li>
-        <li>Compute $H_{\text{resid}} = H_{\text{raw}} - H_{\text{GR}}$</li>
+        <li>Compute $H_{\rm raw}$ from tags using the estimator definition above</li>
+        <li>Model $H_{\rm GR}$ using ephemerides, Earth-orientation parameters, and propagation models</li>
+        <li>Compute $H_{\rm resid} = H_{\rm raw} - H_{\rm GR}$</li>
         <li>Repeat across geometries chosen to hold Sagnac projection fixed while varying field-gradient sensitivity</li>
         <li>Report residual scaling with geometry; publish nuisance-model sensitivity</li>
     </ol>
@@ -157,7 +157,7 @@
     
     <p><strong>Residual Holonomy (TEP target):</strong></p>
     <ul>
-        <li><strong>Area-dependent:</strong> $H_{\text{resid}} \propto (B/A)|\nabla\phi|^2 \times \text{Area}$ (depends on loop flux)</li>
+        <li><strong>Area-dependent:</strong> $H_{\rm resid} \propto (B/A)|\nabla\phi|^2 \times \text{Area}$ (depends on loop flux)</li>
         <li><strong>Field-gradient dependent:</strong> Proportional to scalar field gradient and disformal coupling</li>
         <li><strong>Geometry:</strong> Optimized by large vertical or orbital loops sampling field gradients</li>
         <li><strong>Magnitude:</strong> Order $H/T_{loop} \sim 10^{-18}$–$10^{-16}$ in the forecasts considered here (model- and geometry-dependent)</li>
@@ -186,7 +186,7 @@
     <ul>
         <li><strong>Large Area:</strong> The loop extends to ~20,000 km altitude, enclosing a vast area to maximize TEP flux.</li>
         <li><strong>Sagnac Modeling:</strong> The large Sagnac term is modeled and subtracted using precise IERS Earth orientation parameters (EOP) and GNSS/SLR ephemerides.</li>
-        <li><strong>TEP Discriminator:</strong> A non-zero residual $H_{\text{resid}}$ after Sagnac subtraction.</li>
+        <li><strong>TEP Discriminator:</strong> A non-zero residual $H_{\rm resid}$ after Sagnac subtraction.</li>
         <li><strong>Implementation:</strong> Two-way optical time transfer (TWTTFT) links combined with one-way analysis.</li>
     </ul>
     
@@ -221,7 +221,7 @@
                 <td>Large enclosed area; dominant background (configuration-dependent)</td>
             </tr>
             <tr>
-                <td>Residual holonomy $H_{\text{resid}}$</td>
+                <td>Residual holonomy $H_{\rm resid}$</td>
                 <td>Order 1–100 as</td>
                 <td>$H/T_{loop} \sim 10^{-18}$–$10^{-16}$ (forecast; model-dependent)</td>
             </tr>
@@ -310,7 +310,7 @@
     </ol>
     
     <p>
-        Consistency across geometries provides robust discrimination between residual holonomy $H_{\text{resid}}$ 
+        Consistency across geometries provides robust discrimination between residual holonomy $H_{\rm resid}$ 
         and Sagnac rotation effects.
     </p>
 </div>
@@ -492,21 +492,21 @@
         The raw AU-scale loop holonomy is defined by the direction-reversed loop difference:
     </p>
     <div class="equation">
-        $$H_{\text{AU,raw}} \equiv (\Delta_{AB} + \Delta_{BC} + \Delta_{CA}) - (\Delta_{AC} + \Delta_{CB} + \Delta_{BA}).$$
+        $$H_{\rm AU,raw} \equiv (\Delta_{AB} + \Delta_{BC} + \Delta_{CA}) - (\Delta_{AC} + \Delta_{CB} + \Delta_{BA}).$$
     </div>
 </div>
 
 <div class="critical-analysis">
     <h4>Operational Invariance</h4>
     <p>
-        Constant clock offsets cancel algebraically in $H_{\text{AU,raw}}$ by the same mechanism as in the terrestrial triangle test. The observable is therefore well-defined without assuming an external synchronization convention, provided that emission and reception time tags are recorded for each one-way link.
+        Constant clock offsets cancel algebraically in $H_{\rm AU,raw}$ by the same mechanism as in the terrestrial triangle test. The observable is therefore well-defined without assuming an external synchronization convention, provided that emission and reception time tags are recorded for each one-way link.
     </p>
 </div>
 
 <h5>8.3.2 Physical Content</h5>
 
 <p>
-    The signal of interest is the GR-subtracted residual holonomy $H_{\text{AU,resid}} = H_{\text{AU,raw}} - H_{\text{AU,GR}}$. The modeled GR term includes Shapiro delay contributions from solar-system bodies, kinematic loop terms from platform motion, and plasma dispersion. A nonzero residual with the predicted geometry dependence would indicate non-exact time transport beyond the modeled GR loop effects.
+    The signal of interest is the GR-subtracted residual holonomy $H_{\rm AU,resid} = H_{\rm AU,raw} - H_{\rm AU,GR}$. The modeled GR term includes Shapiro delay contributions from solar-system bodies, kinematic loop terms from platform motion, and plasma dispersion. A nonzero residual with the predicted geometry dependence would indicate non-exact time transport beyond the modeled GR loop effects.
 </p>
 
 <h5>8.3.3 Proposed Configuration</h5>
@@ -515,7 +515,7 @@
     <li>Three-node geometry using one Earth terminal and two spacecraft (or one spacecraft plus a second Earth terminal), enabling both loop orientations.</li>
     <li>Optical time transfer with recorded emission and reception time tags for each directed link.</li>
     <li>Dual-frequency calibration (or independent plasma monitoring) to control dispersive delays.</li>
-    <li>End-to-end modeling of ephemerides and Shapiro delays to construct $H_{\text{AU,GR}}$.</li>
+    <li>End-to-end modeling of ephemerides and Shapiro delays to construct $H_{\rm AU,GR}$.</li>
 </ul>
 
 <h5>8.3.4 Forecast and Feasibility</h5>
@@ -539,11 +539,11 @@
             <tr>
                 <td>Loop time scale</td>
                 <td>$T_{\text{loop}} \sim 10^3$ s</td>
-                <td>Six one-way links contribute to $H_{\text{AU,raw}}$</td>
+                <td>Six one-way links contribute to $H_{\rm AU,raw}$</td>
             </tr>
             <tr>
                 <td>Residual target</td>
-                <td>$H_{\text{AU,resid}} \sim 0.1$–10 ps (indicative)</td>
+                <td>$H_{\rm AU,resid} \sim 0.1$–10 ps (indicative)</td>
                 <td>AU-scale analogue of the triangle-holonomy discriminator; feasibility depends on plasma and ephemeris calibration</td>
             </tr>
         </tbody>
@@ -626,6 +626,7 @@
     <li>Correlations disappear in raw (unprocessed) data</li>
     <li>Correlations are explained by known systematic effects</li>
     <li>Different constellations show inconsistent correlation lengths</li>
+    <li>Conformal-only TEP (B = 0) is not falsified by null holonomy alone; the conformal sector requires independent disconfirmation via clock-correlation or distance-structured observables</li>
 </ul>
 
 <h3>8.5 Optical Clock Networks and Environmental Screening</h3>
@@ -722,7 +723,7 @@
             <tr>
                 <td>Interplanetary Closed-Loop Residual</td>
                 <td>0.1–10 ps (AU-scale loop)</td>
-                <td>Direction-reversed loop: $H_{\text{AU,resid}} = H_{\text{AU,raw}} - H_{\text{AU,GR}}$</td>
+                <td>Direction-reversed loop: $H_{\rm AU,resid} = H_{\rm AU,raw} - H_{\rm AU,GR}$</td>
                 <td>|H<sub>AU,resid</sub>| < 0.01 ps after GR subtraction</td>
             </tr>
             <tr>

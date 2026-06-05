@@ -60,3 +60,5 @@ research
 # IDE files
 *.code-workspace
 data/
+
+.devin

@@ -1,5 +1,5 @@
-v0.3 (Istanbul) — Temporal Topology & Screening Formalism
+v0.4 (Istanbul) - TEP dark-sector reconstruction framing
 
-- Adopted continuous geometric screening nomenclature: Replaced discrete thin-shell language with the Temporal Topology / Temporal Shear framework, aligning the density-regime analysis with the v0.7 geometric formalization.
-- Identified the density-regime screening blind spot: Added the sixth structural limitation to the experimental canon, recognizing that high-density precision tests leave the unscreened low-density regime unconstrained.
-- Harmonized terminology across the TEP series: Ensured consistent use of conformal/disformal sector language and PPN-safe continuous screening throughout the methodological framework.
+- Aligned the experimental-roadmap manuscript with the series ontology: dark matter and dark energy are treated as reconstruction labels, not fundamental substances in TEP.
+- Updated manuscript generation to emit the v0.4 Istanbul filename consistently.
+- Kept the discriminating-test focus on loop asymmetries, spatial correlations, and density-regime screening transitions.
