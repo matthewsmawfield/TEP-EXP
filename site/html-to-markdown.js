@@ -111,12 +111,32 @@ class HTMLToMarkdownConverter {
         
         html = html.replace(/<(?!\/?[a-zA-Z!])/g, '&lt;');
 
+        // Preserve sub/sup tags before generic stripping
+        const subTags = [];
+        html = html.replace(/<sub>(.*?)<\/sub>/gi, (match, inner) => {
+            subTags.push(inner);
+            return `__SUB_${subTags.length - 1}__`;
+        });
+        const supTags = [];
+        html = html.replace(/<sup>(.*?)<\/sup>/gi, (match, inner) => {
+            supTags.push(inner);
+            return `__SUP_${supTags.length - 1}__`;
+        });
+
         // Remove remaining HTML tags
         html = html.replace(/<[^>]+>/g, '');
         
         // Restore MathJax expressions
         mathExpressions.forEach((expr, index) => {
             html = html.replace(`__MATH_EXPRESSION_${index}__`, expr);
+        });
+        
+        // Restore sub/sup tags
+        subTags.forEach((inner, index) => {
+            html = html.replace(`__SUB_${index}__`, `<sub>${inner}</sub>`);
+        });
+        supTags.forEach((inner, index) => {
+            html = html.replace(`__SUP_${index}__`, `<sup>${inner}</sup>`);
         });
         
         // Decode HTML entities
@@ -203,7 +223,7 @@ class HTMLToMarkdownConverter {
         const version = versionMatch ? versionMatch[1]
             .replace(/<[^>]+>/g, '')
             .replace(/^Version:\s*/i, '')
-            .trim() : 'v0.4 (Istanbul)';
+            .trim() : 'v0.5 (Istanbul)';
         
         const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>(.*?)<\/div>/i);
         const date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 31 December 2025 · Last updated: 29 April 2026';
@@ -276,7 +296,7 @@ class HTMLToMarkdownConverter {
             const markdown = this.buildMarkdownDocument(metadata, markdownContent);
             
             // Write to file
-            const outputPath = path.join(__dirname, '..', '9-TEP-EXP-v0.4-Istanbul.md');
+            const outputPath = path.join(__dirname, '..', '9-TEP-EXP-v0.5-Istanbul.md');
             fs.writeFileSync(outputPath, markdown, 'utf8');
             
             console.log('✅ Markdown conversion complete!');
@@ -324,7 +344,7 @@ ${content}
 
 ---
 
-*This document was automatically generated from the TEP-EXP research site. For the interactive version with figures and enhanced formatting, visit: https://matthewsmawfield.github.io/TEP-EXP/*
+*This document was automatically generated from the TEP-EXP research site. For the interactive version with figures and enhanced formatting, visit: https://mlsmawfield.com/tep/exp/*
 
 *Related Work:*
 - [TEP Theory](https://doi.org/10.5281/zenodo.16921911) (Foundational framework)

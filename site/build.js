@@ -2,6 +2,13 @@
 
 const fs = require('fs');
 const path = require('path');
+function processIncludes(html) {
+    return html.replace(/<!--\s*include:\s*([^\s]+)\s*-->/g, (_, relPath) => {
+        const fullPath = path.join(__dirname, '..', 'core', relPath);
+        return fs.existsSync(fullPath) ? fs.readFileSync(fullPath, 'utf8').trim() : '';
+    });
+}
+
 
 async function buildStaticSite() {
     console.log('🔨 Building static site...');
@@ -34,7 +41,7 @@ async function buildStaticSite() {
             const componentPath = path.join(__dirname, 'components', section.file);
             
             if (fs.existsSync(componentPath)) {
-                const componentHtml = fs.readFileSync(componentPath, 'utf8');
+                const componentHtml = processIncludes(fs.readFileSync(componentPath, 'utf8'));
                 
                 // Wrap component in section container (matching the dynamic loader)
                 componentsHtml += `
@@ -164,7 +171,7 @@ async function buildStaticSite() {
         
         console.log('✅ Static site built successfully!');
         console.log(`📁 Output: ${outputPath}`);
-        console.log('📄 Markdown: 9-TEP-EXP-v0.4-Istanbul.md (in root)');
+        console.log('📄 Markdown: 9-TEP-EXP-v0.5-Istanbul.md (in root)');
         console.log(`📊 Generated ${manifest.sections.length} sections (TEP-EXP)`);
         console.log('🚀 TEP-EXP ready for deployment');
         

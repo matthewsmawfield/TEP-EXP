@@ -1,5 +1,5 @@
-v0.4 (Istanbul) - TEP dark-sector reconstruction framing
+v0.5 (Istanbul) — 8 August 2026 — Canonical TEP architecture alignment
 
-- Aligned the experimental-roadmap manuscript with the series ontology: dark matter and dark energy are treated as reconstruction labels, not fundamental substances in TEP.
-- Updated manuscript generation to emit the v0.4 Istanbul filename consistently.
-- Kept the discriminating-test focus on loop asymmetries, spatial correlations, and density-regime screening transitions.
+- Synced to TEP core v0.10 (Jakarta): introduced the unified environmental screening operator 𝒮_Σ(ℰ) in the methodology and adopted "active-shear dilute regime" in place of "unscreened dilute regime" throughout the abstract and light propagation tests.
+- Corrected the disformal metric map from A(φ) to A²(φ) and disambiguated the conformal coupling β → β_A from the PPN parameter β → β_PPN.
+- Updated cross-references to the canonical TEP corpus (Paper 0 → v0.10, Paper 6 retitled to "Temporal Topology Saturation Scale" v0.6, Paper 13 → v0.4).

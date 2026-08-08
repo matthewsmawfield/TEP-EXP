@@ -6,8 +6,8 @@
 ![TEP-EXP: Precision Tests of General Relativity](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.4 (Istanbul)  
-**Date:** First published: 31 December 2025 · Last updated: 4 May 2026  
+**Version:** v0.5 (Istanbul)  
+**Date:** First published: 31 December 2025 · Last updated: 8 August 2026
 **Status:** Preprint  
 **DOI:** [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760)
 **Website:** [https://mlsmawfield.com/tep/exp/](https://mlsmawfield.com/tep/exp/)
@@ -17,13 +17,13 @@
 
 Most high-precision tests of general relativity constrain reciprocity-even, largely local observables within single-metric frameworks. This leaves open a specific underdetermination between General Relativity (GR) and a class of two-metric disformal scalar-tensor modifications, exemplified here by the Temporal Equivalence Principle (TEP).
 
-This paper formalizes a measurement taxonomy distinguishing gauge-invariant from convention-dependent observables and identifies six recurring scope limitations in the experimental canon: (1) two-way measurement dominance; (2) local/global conflation; (3) model-dependent calibration; (4) single-path multi-messenger constraints on differential propagation that do not directly test common-mode clock-sector structure; (5) theory-laden data reduction; and (6) the density-regime screening blind spot, whereby tests performed in deep potential wells probe only the screened regime where scalar-field gradients are continuously suppressed, leaving the unscreened low-density regime unexplored. These characteristics do not diminish the experimental achievements but indicate that, in many cases, the tests primarily constrain parameter space within assumed frameworks rather than systematically discriminating between alternatives.
+This paper formalizes a measurement taxonomy distinguishing gauge-invariant from convention-dependent observables and identifies six recurring scope limitations in the experimental canon: (1) two-way measurement dominance; (2) local/global conflation; (3) model-dependent calibration; (4) single-path multi-messenger constraints on differential propagation that do not directly test common-mode conformal clock-sector structure; (5) theory-laden data reduction; and (6) the proximity-regime screening blind spot, whereby tests performed in deep potential wells probe only the screened regime where scalar-field gradients are continuously suppressed, leaving the active-shear dilute regime unexplored. These characteristics do not diminish the experimental achievements but indicate that, in many cases, the tests primarily constrain parameter space within assumed frameworks rather than systematically discriminating between alternatives.
 
-Discriminating observables—specifically loop asymmetries, spatial correlations, and density-regime screening transitions—are proposed, together with experimental configurations capable of resolving the underdetermination. These include large-area triangle holonomy tests (targeting residual synchronization holonomy H_resid), interplanetary closed-loop timing, altitude-varying optical clock networks to map continuous geometric screening, and matter-wave interferometry.
+Discriminating observables—specifically loop asymmetries, spatial correlations, and proximity-regime screening transitions—are proposed, together with experimental configurations capable of resolving the underdetermination. These include large-area triangle holonomy tests (targeting residual synchronization holonomy H_resid), interplanetary closed-loop timing, altitude-varying optical clock networks to map continuous geometric screening, and matter-wave interferometry.
 
 ## Key Findings
 
-Precision tests of GR predominantly constrain reciprocity-even, two-way observables and therefore underdetermine disformal two-metric theories that preserve local physics. Six structural blind spots are identified: two-way measurement dominance, local/global conflation, model-dependent calibration, the indirect bounds from multi-messenger constraints, theory-laden data reduction, and the density-regime screening blind spot. The paper proposes discriminating tests that directly target one-way, loop-dependent observables—triangle holonomy, interplanetary closed-loop timing, and continental-scale optical clock networks—providing falsifiable pathways to resolve the GR–TEP underdetermination.
+Precision tests of GR predominantly constrain reciprocity-even, two-way observables and therefore underdetermine disformal two-metric theories that preserve local physics. Six structural blind spots are identified: two-way measurement dominance, local/global conflation, model-dependent calibration, the indirect bounds from multi-messenger constraints, theory-laden data reduction, and the proximity-regime screening blind spot. The paper proposes discriminating tests that directly target one-way, loop-dependent observables—triangle holonomy, interplanetary closed-loop timing, and continental-scale optical clock networks—providing falsifiable pathways to resolve the GR–TEP underdetermination.
 
 ## The TEP Research Program
 
@@ -36,7 +36,7 @@ Precision tests of GR predominantly constrain reciprocity-even, two-way observab
 | **Paper 3** | [TEP-GNSS-RINEX](https://github.com/matthewsmawfield/TEP-GNSS-RINEX) | Global Time Echoes: Raw RINEX Consistency Test | [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) |
 | **Paper 4** | [TEP-GL](https://github.com/matthewsmawfield/TEP-GL) | Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations | [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) |
 | **Paper 5** | [TEP-GTE](https://github.com/matthewsmawfield/TEP-GTE) | Global Time Echoes: Empirical Synthesis | [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) |
-| **Paper 6** | [TEP-UCD](https://github.com/matthewsmawfield/TEP-UCD) | Universal Critical Density: Cross-Scale Consistency of ρ_T | [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) |
+| **Paper 6** | [TEP-UCD](https://github.com/matthewsmawfield/TEP-UCD) | Temporal Topology Saturation Scale: Cross-Scale Consistency of ρ_T | [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) |
 | **Paper 7** | [TEP-RBH](https://github.com/matthewsmawfield/TEP-RBH) | The Soliton Wake: Exploring RBH-1 as a Temporal Topology Candidate | [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) |
 | **Paper 8** | [TEP-SLR](https://github.com/matthewsmawfield/TEP-SLR) | Global Time Echoes: Optical-Domain Consistency Test via Satellite Laser Ranging | [10.5281/zenodo.18064581](https://doi.org/10.5281/zenodo.18064581) |
 | **Paper 10** | [TEP-COS](https://github.com/matthewsmawfield/TEP-COS) | Temporal Equivalence Principle: Suppressed Density Scaling in Globular Cluster Pulsars | [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) |
@@ -90,7 +90,7 @@ TEP-EXP/
 │   ├── public/                     # Static assets
 │   └── figures/                    # Generated plots
 ├── manuscripts/                    # Related manuscripts (PDF)
-├── 9-TEP-EXP-v0.4-Istanbul.md      # Generated manuscript (built from site/components)
+├── 9-TEP-EXP-v0.5-Istanbul.md      # Generated manuscript (built from site/components)
 └── VERSION.json                    # Version metadata
 ```
 
@@ -102,7 +102,7 @@ npm install
 npm run build
 ```
 
-The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0.4-Istanbul.md` at the repository root.
+The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0.5-Istanbul.md` at the repository root.
 
 ## Citation
 
@@ -113,7 +113,7 @@ The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0
   year         = {2025},
   doi          = {10.5281/zenodo.18109760},
   url          = {https://doi.org/10.5281/zenodo.18109760},
-  note         = {Preprint, Version v0.4 (Istanbul)}
+  note         = {Preprint, Version v0.5 (Istanbul)}
 }
 ```
 

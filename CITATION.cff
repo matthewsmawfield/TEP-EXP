@@ -17,16 +17,16 @@ abstract: 'Most high-precision tests of general relativity constrain reciprocity
   in the experimental canon: (1) two-way measurement dominance; (2) local/global conflation;
   (3) model-dependent calibration; (4) single-path multi-messenger constraints on
   differential propagation that do not directly test common-mode conformal clock-sector
-  structure; (5) theory-laden data reduction; and (6) the density-regime screening
+  structure; (5) theory-laden data reduction; and (6) the proximity-regime screening
   blind spot, whereby tests performed in deep potential wells probe only the screened
-  regime where scalar-field gradients are continuously suppressed, leaving the unscreened
-  low-density regime unexplored. These characteristics do not diminish the experimental
+  regime where scalar-field gradients are continuously suppressed, leaving the active-shear
+  dilute regime unexplored. These characteristics do not diminish the experimental
   achievements but indicate that, in many cases, the tests primarily constrain parameter
   space within assumed frameworks rather than systematically discriminating between
   alternatives.
 
   Discriminating observables—specifically loop asymmetries, spatial correlations,
-  and density-regime screening transitions—are proposed, together with experimental
+  and proximity-regime screening transitions—are proposed, together with experimental
   configurations capable of resolving the underdetermination. These include large-area
   triangle holonomy tests (targeting residual synchronization holonomy H_resid), interplanetary
   closed-loop timing, altitude-varying optical clock networks to map continuous geometric
@@ -34,7 +34,7 @@ abstract: 'Most high-precision tests of general relativity constrain reciprocity
 
   '
 license: CC-BY-4.0
-version: v0.4 (Istanbul)
+version: v0.5 (Istanbul)
 date-released: 2025-12-31
 keywords:
 - Temporal Equivalence Principle
@@ -55,12 +55,12 @@ keywords:
 - Shapiro delay
 - multi-messenger astronomy
 repository-code: https://github.com/matthewsmawfield/TEP-EXP
-url: https://github.com/matthewsmawfield/TEP-EXP
+url: https://mlsmawfield.com/tep/exp
 doi: 10.5281/zenodo.18109760
 preferred-citation:
   type: article
   title: What Do Precision Tests of General Relativity Actually Measure? (Istanbul
-    v0.4)
+    v0.5)
   authors:
   - family-names: Smawfield
     given-names: Matthew Lukin
