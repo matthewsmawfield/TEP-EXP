@@ -2,17 +2,17 @@
 **Matthew Lukin Smawfield**
 Version: v0.2 (Bahrain)
 First published: 29 July 2026 - Last updated: 8 August 2026
-DOI: 10.5281/zenodo.21677827
+DOI: 10.5281/zenodo.21677826
 
 ---
 
 ## Abstract
 
-The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi$. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. This paper develops the strong-field consequence: *a black hole, under TEP, is a temporal well* — a regular spatial region in which the rate of proper time differs radically from the exterior, without physical collapse to an ultradense singular object and without an absolute one-way boundary. A continuous, extreme but finite gradient in proper-time rate provides a unified mechanism for the principal observational signatures attributed to a black hole.
+The Temporal Equivalence Principle treats proper time as a dynamical field. Matter, light, and ideal clocks couple to the universal causal metric $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi$. The Einstein-frame metric carries the gravitational dynamics; tensor propagation is determined by the principal symbol of the coupled temporal–geometric equations. This paper develops the strong-field consequence: Under TEP, a black hole is modeled as a temporal well—a target regular spatial region in which matter-frame clock rates become strongly suppressed. A continuous, extreme but finite gradient in proper-time rate provides a unified mechanism for the principal observational signatures attributed to a black hole.
 
 Darkness, apparent compactness, large inferred mass, and practical inaccessibility are exterior reconstructions of temporal decoupling. The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations.
 
-The temporal field cannot sit passively on fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed theory — not selecting among competing theories.
+The temporal field cannot sit passively on fixed Schwarzschild geometry: finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed EFT architecture — not selecting among competing theories.
 
 Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. Weak-field data recover GR; horizon-scale images constrain the photon-region geometry but do not directly establish an event horizon; gravitational-wave ringdown provides the sharpest test, because TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain, changing the late-time spectral problem. *Cosmological expansion and black-hole collapse are dual misreadings of dynamical proper time.*
 
@@ -97,7 +97,7 @@ This paper develops the strong-field consequence of TEP and shows what follows f
 
 **Second:** the analysis of Section 3 shows that the temporal field cannot sit passively on fixed Schwarzschild geometry. Finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. If the temporal field becomes strong enough to create a Temporal Horizon, the geometry cannot remain ordinary Schwarzschild.
 
-**Third:** the required geometric ingredients are shown to be mathematically attainable (Sections 4–5). Regular geometries exist. The leading curvature operator produces real backreaction. The canonical TEP matter coupling fixes the temporal sector; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed theory.
+**Third:** the required geometric ingredients are shown to be mathematically attainable (Sections 4–5). Regular geometries exist. The leading curvature operator produces real backreaction. The canonical TEP matter coupling fixes the temporal sector; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed EFT architecture.
 
 **Fourth:** four observational consequences follow from one temporal field (Sections 6–8): time transfer, mass inference, photon accessibility, and ringdown. The Temporal Horizon is the operational boundary defined directly from observable temporal accessibility. Replacing an absorbing horizon boundary with a continuous, strongly time-dilated region changes the ringdown boundary-value problem in principle.
 
@@ -173,7 +173,7 @@ The theory is a defined modified-gravity theory, not a broad framework into whic
 
 - The regularising nonlinear coefficients — higher-order curvature couplings and potential terms that control the deep-region profile — are selected by the joint requirements of global regularity (finite curvature, bounded areal radius, Lorentzian signature) and observational consistency. These are EFT corrections to the leading operator, not alternative theories.
 
-The canonical TEP matter coupling fixes the temporal sector. The present paper derives the strong-field solution requirements: the Schwarzschild incompatibility (Section 3) forces gravitational backreaction, and the leading curvature operator supplies it (Section 4). The regularising nonlinear coefficients are selected by global regularity and observation. What is under construction is the global field solution of this fixed theory — not a choice among competing theories.
+The canonical TEP matter coupling fixes the temporal sector. The present paper derives the strong-field solution requirements: the Schwarzschild incompatibility (Section 3) forces gravitational backreaction, and the leading curvature operator supplies it (Section 4). The regularising nonlinear coefficients are selected by global regularity and observation. What is under construction is the global field solution of this fixed EFT architecture — not a choice among competing theories.
 
 ## 2.2 Frame Dictionary and Local Lorentz Limit
 
@@ -335,7 +335,7 @@ The statement that a fixed ADM $M$ is "the physical mass measured by a distant o
 
 ## 2.8 Sign and Identifiability of Strong-Field phantom mass
 
-A direct intuition might suggest that because deep clocks run slow, observed periods are longer, so the inferred mass is larger. This overlooks the spatial magnification that accompanies the temporal stretching, and recognising the interplay between the two is the first gate of the entire analysis.
+A direct intuition might suggest that because deep clocks run slow, observed periods are longer, so the inferred mass is larger. This overlooks the spatial-calibration terms that can accompany temporal stretching, and recognising the interplay between the two is the first gate of the entire analysis.
 
 Consider a source orbiting in the deep region with local orbital period $P_s$ and local semi-major axis $a_{\rm local}$. A distant observer measures period $P_o$ and infers radius $a_{\rm GR}$. The temporal transfer stretches the period:
 
@@ -373,7 +373,7 @@ If the spatial scale is held fixed ($\mathcal S_a = 1$, $\mathcal D_{\rm dyn} = 
 M_{\rm phantom}^{T} > 0 \quad \Longleftrightarrow \quad \mathcal S_a^3 \, \mathcal D_{\rm dyn} > \mathcal T_P^2.
 \end{equation}
 
-Pure conformal rescaling does not alter null trajectories. The spatial calibration factor $\mathcal S_a$ can differ from unity through scalar backreaction on $g_{\mu\nu}$, disformal propagation, endpoint distance calibration and the timelike orbital mapping. Appendix L explicitly isolates the sGB backreaction contribution and demonstrates the different coupling orders of the null and timelike observables.
+The spatial calibration factor $\mathcal S_a$ can differ from unity through timelike orbital calibration, endpoint distance inference, disformal propagation, and scalar backreaction on $g_{\mu\nu}$. Pure conformal rescaling does not by itself alter null trajectories. Appendix L isolates the scalar–Gauss–Bonnet backreaction and matter-orbit contributions.
 
 The spatial calibration $\mathcal S_a$ is not a free parameter. It is determined by photon propagation on $\tilde g_{\mu\nu}$ (lensing magnification), the GR-inferred distance $D_{\rm GR}$ (standard-candle or parallax calibration through the temporal field), and the orbital dynamics on the temporal-well geometry. The critical threshold is $\mathcal S_a > \mathcal T_P^{2/3}$. For moderate temporal transfer $\mathcal T_P \sim 10$, this requires $\mathcal S_a > 4.6$ — a strong but achievable lensing magnification near a strong-field source.
 
@@ -479,7 +479,7 @@ The scalar-Gauss-Bonnet (sGB) coupling $\alpha_{\rm GB}\,\phi\,\mathcal{G}$ is t
 
 - Sector-dependent observables — the shadow is sensitive to the geometric metric at $\mathcal{O}(\eta^2)$ while the ISCO feels the conformal factor at $\mathcal{O}(\eta)$, because null geodesics are conformally invariant while timelike geodesics are not (Appendix L).
 
-What sGB does *not* establish: a regular deep region. The nonlinear solutions of Sotiriou \& Zhou (2014) for the same linear sGB coupling develop a finite-area singularity rather than a regular temporal minimum, and recent simulations (Thaalba et al. 2024) confirm this and explore a possible connection to loss of hyperbolicity. The TEP-selected solution must satisfy the minimal temporal-well criteria: $0 < N(r)$ and $N_{\min} \ll N_o$ everywhere, with no observer-independent one-way boundary. The leading curvature operator supplies the backreaction channel; the regularising nonlinear coefficients that complete the deep-region profile are selected by the joint requirements of global regularity and observation. This is the construction programme — solving the fixed theory, not choosing among theories.
+What sGB does *not* establish: a regular deep region. The nonlinear solutions of Sotiriou \& Zhou (2014) for the same linear sGB coupling develop a finite-area singularity rather than a regular temporal minimum, and recent simulations (Thaalba et al. 2024) confirm this and explore a possible connection to loss of hyperbolicity. The TEP-selected solution must satisfy the minimal temporal-well criteria: $0 < N(r)$ and $N_{\min} \ll N_o$ everywhere, with no observer-independent one-way boundary. The leading curvature operator supplies the backreaction channel; the regularising nonlinear coefficients that complete the deep-region profile are selected by the joint requirements of global regularity and observation. This is the construction programme — solving the fixed EFT architecture, not choosing among theories.
 
 ## 4.3 The Inverse Reconstruction
 
@@ -726,7 +726,7 @@ The Temporal Equivalence Principle treats proper time as a dynamical field. This
 
 The operational boundary is the Temporal Horizon — the observer-relative threshold beyond which the clock-transfer factor renders signals practically undetectable — not the event horizon. The event horizon is a global causal construct inferred from the spacetime model, not an observable. Apparent compactness arises from exterior-frame reconstruction, not physical compression. Inferred gravitational mass and local material mass need not coincide; a strong-field phantom mass residual $M_{\rm phantom}^{T} \equiv M_{\rm fit}^{\rm GR} - M_{\rm matter}^{\rm TEP}$ measures this discrepancy, its sign determined by the data. Standard black-hole ontology assumes isochrony: source clocks, photon propagation, and observer clocks mapped onto a single general-relativistic time coordinate. TEP drops that closure. Under TEP, the conventional reconstruction — compact mass, event horizon, singular collapse — is no longer the unique reading of the same observations.
 
-The temporal field cannot sit passively on fixed Schwarzschild geometry. Finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed theory — not selecting among competing theories.
+The temporal field cannot sit passively on fixed Schwarzschild geometry. Finite curvature and bounded areal radius are mutually exclusive when $g_{\mu\nu}$ is held fixed. Strong temporal structure forces gravitational backreaction. The canonical TEP matter coupling fixes the temporal sector; the leading curvature operator supplies backreaction; the regularising nonlinear coefficients are selected by global regularity and observation. The construction programme is solving the global field equations of the fixed EFT architecture — not selecting among competing theories.
 
 Four observational consequences follow from one temporal field: time transfer, mass inference, photon accessibility, and ringdown. TEP replaces the purely ingoing event-horizon condition with propagation through a regular temporal domain; the late-time spectral problem is therefore not the GR black-hole spectral problem. This is the theory-level prediction. An altered late-time spectrum is universal to the TEP boundary condition. The benchmark calculation on a prescribed Hayward background isolates the geometric mechanism: longer damping and amplified isospectrality breaking are the realised behaviour of the present deep-transit benchmark. The nonlinear TEP solution determines the physical spectrum.
 
@@ -1703,7 +1703,7 @@ All numbers are computed at $\eta = -0.1$ in the perturbative regime. Note that 
 
 # References
 
-- Smawfield, M. L. (2025). Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed. Paper 0 (Jakarta). DOI: 10.5281/zenodo.16921911.
+- Smawfield, M. L. (2025). Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed. Paper 0, v0.11 (Jakarta). DOI: 10.5281/zenodo.16921911.
 
 - Schwarzschild, K. (1916). Über das Gravitationsfeld eines Massenpunktes nach der Einsteinschen Theorie. *Sitzungsber. Preuss. Akad. Wiss.*, 189–196.
 

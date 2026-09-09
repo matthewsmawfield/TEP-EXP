@@ -6,8 +6,8 @@
 ![TEP-EXP: Precision Tests of General Relativity](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.5 (Istanbul)  
-**Date:** First published: 31 December 2025 · Last updated: 8 August 2026
+**Version:** v0.6 (Istanbul)  
+**Date:** First published: 31 December 2025 · Last updated: 9 September 2026
 **Status:** Preprint  
 **DOI:** [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760)
 **Website:** [https://mlsmawfield.com/tep/exp/](https://mlsmawfield.com/tep/exp/)
@@ -90,7 +90,7 @@ TEP-EXP/
 │   ├── public/                     # Static assets
 │   └── figures/                    # Generated plots
 ├── manuscripts/                    # Related manuscripts (PDF)
-├── 9-TEP-EXP-v0.5-Istanbul.md      # Generated manuscript (built from site/components)
+├── 9-TEP-EXP-v0.6-Istanbul.md      # Generated manuscript (built from site/components)
 └── VERSION.json                    # Version metadata
 ```
 
@@ -102,7 +102,7 @@ npm install
 npm run build
 ```
 
-The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0.5-Istanbul.md` at the repository root.
+The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0.6-Istanbul.md` at the repository root.
 
 ## Citation
 
@@ -113,7 +113,7 @@ The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0
   year         = {2025},
   doi          = {10.5281/zenodo.18109760},
   url          = {https://doi.org/10.5281/zenodo.18109760},
-  note         = {Preprint, Version v0.5 (Istanbul)}
+  note         = {Preprint, Version v0.6 (Istanbul)}
 }
 ```
 

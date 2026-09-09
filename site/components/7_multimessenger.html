@@ -1,8 +1,8 @@
 <h2>6. The Multi-Messenger Constraints</h2>
 
 <p>
-    The event GW170817 detected gravitational waves from a binary neutron star merger, 
-    followed (+1.74 ± 0.05) s later by a gamma-ray burst (GRB 170817A). This timing coincidence yields an 
+    LIGO and Virgo detected gravitational waves from the binary neutron star merger 
+    GW170817, followed (+1.74 ± 0.05) s by the gamma-ray burst GRB 170817A. This timing coincidence yields an 
     assumption-dependent constraint on the fractional speed difference between gravitational waves and light.
 </p>
 
@@ -10,8 +10,8 @@
 
 <p>
     On August 17, 2017, the LIGO-Virgo collaboration detected gravitational waves from 
-    a binary neutron star inspiral in NGC 4993, with luminosity distance of order 40 Mpc (130 million light-years; conservative bounds use the lower end of the distance interval) 
-    distant. The Fermi Gamma-ray Burst Monitor detected GRB 170817A approximately (+1.74 ± 0.05) s 
+    a binary neutron star inspiral in NGC 4993, with luminosity distance of order 40 Mpc (130 million light-years; conservative bounds use the lower end of the distance interval).
+    The Fermi Gamma-ray Burst Monitor detected GRB 170817A approximately (+1.74 ± 0.05) s 
     after the gravitational wave signal.
 </p>
 
@@ -22,12 +22,12 @@
     fractional speed difference during the trip.
 </p>
 
-<div class="equation">$$-3\times 10^{-15} \lesssim \frac{c_g - c_\gamma}{c} \lesssim 7\times 10^{-16}$$</div>
+<div class="equation">$$\frac{|c_\gamma - c_g|}{c} \lesssim \text{few} \times 10^{-15}$$</div>
 
 <p>
-    The numerical bounds depend on conservative assumptions about intrinsic emission-time offsets between the 
-    gravitational-wave and gamma-ray signals. In particular, the observable directly constrains differential 
-    propagation, while the emission-time difference is astrophysically model dependent (Abbott et al. 2017).
+    The numerical bounds depend on conservative assumptions about intrinsic emission-time offsets between the
+    gravitational-wave and gamma-ray signals. In particular, the observable directly constrains differential
+    propagation, while the emission-time difference is astrophysically model-dependent (Abbott et al. 2017).
 </p>
 
 <h5>6.1.2 The Standard Interpretation</h5>
@@ -114,14 +114,14 @@
     <p>
         For photons propagating on $g_{\mu\nu}^{\text{EM}} = A^2(\phi) g_{\mu\nu}^{\text{GW}}$:
     </p>
-    <div class="equation">$$T_\gamma = \int_S^D \frac{\sqrt{A(\phi)} \, dl}{c \times \sqrt{A(\phi)}} = \int_S^D \frac{dl}{c} = T_{\text{GW}}$$</div>
+    <div class="equation">$$T_\gamma = \int_S^D \frac{A(\phi) \, dl}{c \times A(\phi)} = \int_S^D \frac{dl}{c} = T_{\text{GW}}$$</div>
     <p>
         The conformal factor A(φ) cancels in the differential time-of-flight observable under specific operational assumptions:
     </p>
     <ul>
         <li>Co-spatial Endpoints: Source S and Detector D are identical for both signals.</li>
         <li>Same Clock Standards: The flight time is measured using the same matter-sector clock definition at the detector.</li>
-        <li>Null Path Invariance: Conformal transformations preserve the null character of geodesics ($ds^2 = 0 \iff A ds^2 = 0$).</li>
+        <li>Null Path Invariance: Conformal transformations preserve the null character of geodesics ($ds^2 = 0 \iff A^2(\phi)\,ds^2 = 0$).</li>
         <li>Emission-Time Nuisance: Intrinsic emission delays are treated as nuisance parameters to be modeled or marginalized.</li>
     </ul>
     <p>
@@ -136,10 +136,10 @@
     </p>
     <ul>
         <li>Null geodesics remain null: If g<sub>μν</sub>k<sup>μ</sup>k<sup>ν</sup> = 0, 
-            then g̃<sub>μν</sub>k<sup>μ</sup>k<sup>ν</sup> = A(φ) × 0 = 0</li>
-        <li>Path length scales: dl̃ = √A(φ) dl</li>
-        <li>Coordinate speed scales: c̃ = √A(φ) c</li>
-        <li>Flight time invariant: T̃ = dl̃/c̃ = dl/c = T</li>
+            then g̃<sub>μν</sub>k<sup>μ</sup>k<sup>ν</sup> = A²(φ) × 0 = 0</li>
+        <li>Proper length scales: dl̃ = A(φ) dl</li>
+        <li>Proper time scales: dτ̃ = A(φ) dτ</li>
+        <li>Physical speed invariant: c̃ = dl̃/dτ̃ = c</li>
     </ul>
     <p>
         This cancellation concerns the differential arrival-time observable for two signals that follow the same null trajectory and are time-stamped by the same detector clock standard. In that configuration, a purely conformal rescaling does not generate a measurable EM–GW time-of-flight difference.
@@ -152,13 +152,13 @@
     The disformal term B(φ)∇<sub>μ</sub>φ∇<sub>ν</sub>φ does modify the relative propagation:
 </p>
 
-<div class="equation">$$c_\gamma^2 = c^2 \left[1 - \frac{B(\phi)(\partial\phi)^2}{A(\phi)}\right] \quad \text{(schematic parameterization)}$$</div>
+<div class="equation">$$c_\gamma^2 = c^2 \left[1 - \frac{B(\phi)}{A^2(\phi)}(\partial\phi)^2\right] \quad \text{(schematic parameterization)}$$</div>
 
 <p>
     This introduces a genuine speed difference:
 </p>
 
-<div class="equation">$$\Delta T = T_\gamma - T_{\text{GW}} \approx \frac{D}{c} \times \frac{B(\phi)(\partial\phi)^2}{A(\phi)}$$</div>
+<div class="equation">$$\Delta T = T_\gamma - T_{\text{GW}} \approx \frac{L}{2c} \frac{B(\phi)}{A^2(\phi)}(\partial\phi)^2$$</div>
 
 <p>
     GW170817's observed coincidence (after accounting for astrophysical emission-time uncertainties) implies that any net differential propagation delay accumulated over the propagation distance must be small. Operationally, the observation bounds the fractional speed difference at the few × 10<sup>−15</sup> level under standard emission-time assumptions.

@@ -34,7 +34,7 @@ abstract: 'Most high-precision tests of general relativity constrain reciprocity
 
   '
 license: CC-BY-4.0
-version: v0.5 (Istanbul)
+version: v0.6 (Istanbul)
 date-released: 2025-12-31
 keywords:
 - Temporal Equivalence Principle
@@ -60,7 +60,7 @@ doi: 10.5281/zenodo.18109760
 preferred-citation:
   type: article
   title: What Do Precision Tests of General Relativity Actually Measure? (Istanbul
-    v0.5)
+    v0.6)
   authors:
   - family-names: Smawfield
     given-names: Matthew Lukin

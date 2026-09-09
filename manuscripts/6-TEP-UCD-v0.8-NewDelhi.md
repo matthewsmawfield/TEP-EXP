@@ -796,7 +796,7 @@ Topology screening. Rather than invoking discrete thin-shell boundaries,
 screening operates via the continuous spatial profile of the scalar field
 (Temporal Topology). The tight geometric packing in deep potential wells
 suppresses the local field gradient (Temporal Shear), ensuring short-range
-fifth-force suppression while leaving the field light cosmologically.
+Temporal Shear suppression while leaving the field light cosmologically.
 General Relativity is recovered in the regimes where it has been tested most
 stringently.
 
@@ -2285,7 +2285,7 @@ Olausen, S. A., & Kaspi, V. M. 2014, *ApJS*, 212, 6 (DOI: 10.1088/0067-0049/212/
 
 ### TEP Research Series
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.10 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.11 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
 
 Smawfield, M. L. (2025b). *Global Time Echoes: Distance-Structured Correlations in GNSS Clocks*. Preprint v0.26 (Jaipur). Zenodo. DOI: [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) (Paper 1)
 
@@ -2772,7 +2772,7 @@ with effective mass parameter:
 
 The critical behavior is immediate. When $\rho > \rho_* \equiv \mu^2 M^2$,
 the effective mass squared is negative and the field sits at the symmetric
-minimum $\phi = 0$; the scalar is massive and screened, so fifth-force
+minimum $\phi = 0$; the scalar is massive and screened, so Temporal Shear
 effects are suppressed. When $\rho < \rho_*$, symmetry is spontaneously
 broken, the field rolls to $\phi_0 = \mu_{\rm eff}/\sqrt{\lambda}$, and the
 scalar becomes light—generating long-range forces. The saturation scale is:

@@ -128,7 +128,7 @@ async function buildStaticSite() {
         }
 
         // Copy robots.txt and sitemap.xml to dist root
-        const rootFiles = ['404.html', 'robots.txt', 'sitemap.xml', 'CNAME', '29c6507763d2303d801cc8ed89d39f88.txt'];
+        const rootFiles = ['404.html', 'robots.txt', 'sitemap.xml', 'CNAME',];
         for (const file of rootFiles) {
             const src = path.join(__dirname, 'public', file);
             const dest = path.join(distDir, file);
@@ -171,7 +171,7 @@ async function buildStaticSite() {
         
         console.log('✅ Static site built successfully!');
         console.log(`📁 Output: ${outputPath}`);
-        console.log('📄 Markdown: 9-TEP-EXP-v0.5-Istanbul.md (in root)');
+        console.log('📄 Markdown: 9-TEP-EXP-v0.6-Istanbul.md (in root)');
         console.log(`📊 Generated ${manifest.sections.length} sections (TEP-EXP)`);
         console.log('🚀 TEP-EXP ready for deployment');
         

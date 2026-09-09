@@ -96,13 +96,24 @@ parameters:
 
   - symbol: "kappa_MSP"
     latex: "\\kappa_{\\text{MSP}}"
-    meaning: "Pulsar observable response coefficient"
-    value: null
+    meaning: "Pulsar in-equation acceleration coupling (screened)"
+    value: 0.05
     units: "dimensionless"
     class: "observable_response"
     first_paper: 10
     used_in: [10, 17]
-    description: "Domain-level transfer coefficient for millisecond-pulsar timing residuals."
+    description: "In-equation coupling in the pulsar spin-down equation; bare ~1e6 suppressed by chameleon factor S~1e-8. The key observational signature is the suppressed density scaling (Gamma=0.39 vs Newtonian 0.75), reflecting the potential-based TEP clock response."
+
+  - symbol: "tilde_kappa_MSP"
+    latex: "\\tilde\\kappa_{\\text{MSP}}"
+    meaning: "Full empirical pulsar response coefficient (pipeline inversion)"
+    value: 29000.0
+    value_uncertainty: 45000.0
+    units: "dimensionless"
+    class: "observable_response"
+    first_paper: 10
+    used_in: [10, 11, 6]
+    description: "Full response coefficient from step_44_kappa_msp_prior.json, obtained by inverting the 0.63 dex raw excess with real cluster parameters. Suitable for cross-probe comparison with kappa_Cep. Effective screening factor S_MSP ~ 0.027 relative to bare ~1e6."
 
   - symbol: "epsilon_T"
     latex: "\\epsilon_T"

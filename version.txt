@@ -1,5 +1,17 @@
-v0.5 (Istanbul) — 8 August 2026 — Canonical TEP architecture alignment
+v0.6 (Istanbul) — 9 September 2026 — Corpus sync and manuscript corrections
 
-- Synced to TEP core v0.10 (Jakarta): introduced the unified environmental screening operator 𝒮_Σ(ℰ) in the methodology and adopted "active-shear dilute regime" in place of "unscreened dilute regime" throughout the abstract and light propagation tests.
-- Corrected the disformal metric map from A(φ) to A²(φ) and disambiguated the conformal coupling β → β_A from the PPN parameter β → β_PPN.
-- Updated cross-references to the canonical TEP corpus (Paper 0 → v0.10, Paper 6 retitled to "Temporal Topology Saturation Scale" v0.6, Paper 13 → v0.4).
+- Synced to TEP core v0.11 (Jakarta) and updated companion manuscripts: Paper 3 → v0.6, Paper 4 → v0.7, Paper 5 → v0.6, Paper 7 → v0.4, Paper 11 → v0.9, Paper 12 → v0.6, Paper 13 → v0.5, Paper 16 → v0.3, Paper 29 → v0.3; added Papers 30, 31, and 32. Self-citations in the References section updated to match.
+- Completed the "active-shear dilute regime" terminology replacement throughout the manuscript (v0.5 applied it only to the abstract and light propagation tests; v0.6 extends to the introduction and methodology).
+- Made conformal scaling formulas in §6 consistent with the A²(φ) metric map corrected in v0.5: replaced √A scaling factors with A, updated the null-invariance condition to A²(φ) ds² = 0, and corrected the photon flight-time integral.
+- Corrected two physics errors: the GPS relativistic correction decomposition (gravitational +45 μs/day, velocity −7 μs/day, net +38 μs/day) and the Sagnac phase formula (4π → 8π).
+- Fixed cross-references: Sections 3–8 → 3–7 in the Conclusions, Table 8.1.3 → §8.2.3 in §8, and undefined author-year citations (Smawfield 2025a/e) → (Paper 0).
+- Updated the core parameter registry: redefined κ_MSP (screened in-equation acceleration coupling, value 0.05) and added κ̃_MSP (full empirical pulsar response coefficient from pipeline inversion, value 2.9 × 10⁴) to align with Paper 10's updated parameter definitions.
+- Editorial corrections: methodology ordinal numbering (second → third, fifth → fourth distinctions), grammar (multimessenger intro subject-verb, redundant "distant", "model-dependent" hyphenation), HTML entity escaping in table cells, g_μv → g_μν notation, H_resid subscript standardization, en-dashes for year ranges, removed duplicate Dong et al. (2006) reference, corrected Pound-Rebka-Snider and Hafele-Keating citation years.
+- GW170817 speed constraint simplified to symmetric bound |c_γ − c_g|/c ≲ few × 10⁻¹⁵; removed redundant two-form explanatory note
+- §2.2: replaced "inherently insensitive to direction-dependent effects" with precise reciprocity-odd/even wording matching §1.2 and Appendix B
+- §9.2: replaced two-ruler/Malament argument with single-metric coupling clarification (all matter couples to tilde g)
+- §9.2: replaced pure-A closed-loop path dependence with exact-gradient statement (oint d ln A = 0)
+- §3: added S_A/S_Sigma distinction (amplitude/clock vs active-gradient/source-charge projections)
+- §9.2: replaced "clocks and light can define different simultaneity surfaces" with correct framing (both couple to tilde g; split is tilde sigma vs sigma_GR)
+- §9.2: deleted remaining old "two rulers" and "second causal structure" paragraphs; new H_resid paragraph is sufficient
+- §2/§3: replaced "decouples local clock rates" with S_A/S_Sigma distinction (suppression of S_Sigma; S_A is distinct projection)

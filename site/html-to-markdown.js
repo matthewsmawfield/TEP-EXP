@@ -223,10 +223,10 @@ class HTMLToMarkdownConverter {
         const version = versionMatch ? versionMatch[1]
             .replace(/<[^>]+>/g, '')
             .replace(/^Version:\s*/i, '')
-            .trim() : 'v0.5 (Istanbul)';
+            .trim() : 'v0.6 (Istanbul)';
         
         const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>(.*?)<\/div>/i);
-        const date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 31 December 2025 · Last updated: 29 April 2026';
+        const date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 31 December 2025 · Last updated: 9 September 2026';
         
         const doiMatch = html.match(/DOI:\s*<a[^>]*href=["']([^"']*)["'][^>]*>\s*([^<]*?)\s*<\/a>/i);
         const doi = doiMatch ? doiMatch[2] : '[DOI]';
@@ -296,7 +296,7 @@ class HTMLToMarkdownConverter {
             const markdown = this.buildMarkdownDocument(metadata, markdownContent);
             
             // Write to file
-            const outputPath = path.join(__dirname, '..', '9-TEP-EXP-v0.5-Istanbul.md');
+            const outputPath = path.join(__dirname, '..', '9-TEP-EXP-v0.6-Istanbul.md');
             fs.writeFileSync(outputPath, markdown, 'utf8');
             
             console.log('✅ Markdown conversion complete!');
