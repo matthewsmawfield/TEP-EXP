@@ -95,5 +95,12 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#220126"
+  "theme_color": "#220126",
+  "name": "TEP-EXP",
+  "short_name": "TEP-EXP",
+  "paper_number": "9",
+  "author": "Matthew Lukin Smawfield",
+  "version": "v0.7 (Istanbul)",
+  "codename": "Istanbul",
+  "date": "13 September 2026"
 }

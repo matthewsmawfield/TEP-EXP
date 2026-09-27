@@ -38,7 +38,7 @@
             <tr>
                 <td>$\lambda_T$</td>
                 <td>Temporal Topology correlation length (characteristic scale of $C_A$ decay with distance)</td>
-                <td>Predicted range: $10^3$–$10^4$ km; falsifiable if outside 500–20,000 km</td>
+                <td>Empirical span across GNSS constellation products: $10^3$–$10^4$ km (e.g. $L_c \approx 4{,}200$ km in GPS, $1{,}862 \pm 112$ km in MGEX); empirical span bounds cross-network consistency outside 500–20,000 km</td>
             </tr>
             <tr>
                 <td>$\kappa_X$</td>
@@ -82,30 +82,34 @@
 </div>
 
 <div class="critical-analysis">
-    <h4>Decomposition and Invariance</h4>
+    <h4>Decomposition, Invariance, and Clock Drift</h4>
     <p>
-        <strong>1. Invariance to Clock Offsets:</strong> Let each clock have a constant offset $\delta_i$ from coordinate time: $\tau_i(t) = t + \delta_i$. The term $\delta_i$ appears in one emission and one reception term in each direction.
+        <strong>1. Invariance to Constant Clock Offsets:</strong> Let each clock have a constant offset $\delta_i$ from coordinate time: $\tau_i(t) = t + \delta_i$. The term $\delta_i$ appears in one emission and one reception term in each direction.
         <br>In $\circlearrowright$: $(\delta_B - \delta_A) + (\delta_C - \delta_B) + (\delta_A - \delta_C) = 0$.
         <br>Thus, $H_{\rm raw}$ is strictly invariant to constant clock synchronization errors.
     </p>
     <p>
-        <strong>2. Decomposition:</strong> The observable decomposes into physical and systematic terms:
+        <strong>2. Clock Drift and Rate Variations:</strong> If clocks exhibit fractional frequency drifts or linear rates $\dot{\delta}_i \equiv d_i$, the uncancelled residual depends on link asymmetry and loop transit time $T_{\rm loop} \approx 0.5$ s. Over characteristic link durations $\Delta t_{\rm link} \sim 0.05$–$0.1$ s, optical lattice clocks with fractional instability $d \sim 10^{-18}$ contribute an uncancelled drift residual $H_{\rm drift} \sim d \cdot \Delta t_{\rm link} \sim 0.1$–$0.5$ as.
+    </p>
+    <p>
+        <strong>3. Decomposition:</strong> The observable decomposes into physical, systematic, and drift terms:
     </p>
     <div class="equation">
-        $$H_{\rm raw} = H_{\text{Sagnac}} + H_{\text{Shapiro}} + H_{\text{GM}} + H_{\text{atm}} + H_{\text{inst}} + H_{\rm TEP}$$
+        $$H_{\rm raw} = H_{\text{Sagnac}} + H_{\text{Shapiro}} + H_{\text{GM}} + H_{\text{atm}} + H_{\text{inst}} + H_{\text{drift}} + H_{\rm TEP}$$
     </div>
     <ul>
         <li>$H_{\text{Sagnac}} \propto \mathbf{\Omega} \cdot \mathbf{A}$: Earth rotation (dominant, $\sim 100$ ns).</li>
-        <li>$H_{\text{Shapiro}} \propto \sum GM/r$: Gravitational delay (cancels if path $AB$ same as $BA$, but nonzero if S/C motion makes paths differ).</li>
+        <li>$H_{\text{Shapiro}} \propto \sum GM/r$: Gravitational delay (cancels if path $AB$ same as $BA$, but nonzero if spacecraft motion makes paths differ).</li>
         <li>$H_{\text{GM}}$: Gravito-magnetic/Lense-Thirring effects ($\sim 10^{-17}$ s).</li>
         <li>$H_{\text{atm}}$: Non-reciprocal atmospheric delays (requires dual-frequency/radiometry).</li>
         <li>$H_{\text{inst}}$: Non-reciprocal instrumental delays (fiber loops, transponders).</li>
+        <li>$H_{\text{drift}}$: Uncancelled clock frequency drift during the loop transit ($\sim 0.1$–$0.5$ as for $10^{-18}$ stability).</li>
         <li><strong>$H_{\rm TEP}$:</strong> The signal of interest (residual synchronization holonomy).</li>
     </ul>
 </div>
 
 <p>
-    The experimental challenge is to model or control the first five terms to isolate the sixth.
+    The experimental challenge is to model or control the non-TEP terms to isolate the residual synchronization holonomy.
 </p>
 
 <div class="key-concept">
@@ -233,12 +237,12 @@
             <tr>
                 <td>Detection threshold</td>
                 <td>Order 10<sup>2</sup> as</td>
-                <td>Set by subtraction residuals and link non-reciprocity (configuration-dependent)</td>
+                <td>Single-loop absolute threshold set by subtraction residuals and link non-reciprocity (configuration-dependent)</td>
             </tr>
         </tbody>
     </table>
     <p>
-        The signal lies at the frontier of detectability. Isolating an attosecond-level residual from the ~100 ns Sagnac background requires differential measurements across multiple geometries. These targets should be regarded as indicative feasibility thresholds rather than finalized performance specifications.
+        Feasibility status: With current single-loop subtraction residuals ($\sim 10^2$ as), an absolute MEO triangle experiment operates as a bound-setting measurement ($|H_{\rm resid}| \lesssim 100$ as), constraining large disformal cone tilts. Isolating the predicted $0.5$–$50$ as benchmark band from the ~100 ns Sagnac background cannot be achieved via direct single-loop subtraction; it requires either an order-of-magnitude refinement in geodetic/ephemeris modeling and link non-reciprocity, or the differential multi-geometry strategy described in §8.2.5 that cancels common-mode modeling errors across matched loops.
     </p>
 </div>
 
@@ -278,6 +282,12 @@
                 <td>0.1 ns</td>
                 <td>Order 10<sup>2</sup>–10<sup>3</sup> as (after modeling)</td>
                 <td>ITRF reference frame</td>
+            </tr>
+            <tr>
+                <td>Clock drift &amp; instability</td>
+                <td>0.1–0.5 as</td>
+                <td>~0.1 as</td>
+                <td>Continuous optical lattice frequency tracking ($10^{-18}$ stability)</td>
             </tr>
             <tr>
                 <td><strong>TEP signal</strong></td>
@@ -711,14 +721,14 @@
             <tr>
                 <td>Correlation length λ</td>
                 <td>1,000–10,000 km</td>
-                <td>Screening theory: λ ~ (M<sub>Pl</sub>/ρ)^(1/(n+1)) × Λ</td>
-                <td>&lt; 500 km or &gt; 20,000 km</td>
+                <td>Temporal Topology transition radius $R_T(M_\oplus) \approx 4{,}150$ km ($\rho_T \approx 20\text{ g/cm}^3$) and empirical GNSS span ($1{,}050$–$4{,}350$ km)</td>
+                <td>&lt; 500 km or &gt; 20,000 km (excludes empirical cross-network consistency)</td>
             </tr>
             <tr>
                 <td>Residual holonomy H<sub>resid</sub></td>
                 <td>0.5–50 as (MEO Triangle)</td>
-                <td>H<sub>resid</sub>/T<sub>loop</sub> ~ 10⁻¹⁸–10⁻¹⁶ (TEP-GL Forecast)</td>
-                <td>|H<sub>resid</sub>| &lt; 0.1 as after GR subtraction</td>
+                <td>Unscreened disformal forecast band ($H_{\rm resid}/T_{\rm loop} \sim 10^{-18}$–$10^{-16}$; unconstrained by GW170817 cone tilts)</td>
+                <td>|H<sub>resid</sub>| &lt; 100 as (bound-setting with single-loop modeling); |H<sub>resid</sub>| &lt; 0.5 as with differential geometry</td>
             </tr>
             <tr>
                 <td>Interplanetary Closed-Loop Residual</td>
@@ -729,19 +739,19 @@
             <tr>
                 <td>Anisotropy ratio (EW/NS)</td>
                 <td>1.5–3.0</td>
-                <td>CMB velocity v ~ 369 km/s modulates screening</td>
+                <td>Phenomenological hypothesis: kinematic coupling to CMB motion ($v \sim 369$ km/s); pending derived microphysics</td>
                 <td>Ratio &lt; 1.2 or &gt; 5.0</td>
             </tr>
             <tr>
                 <td>Orbital coupling</td>
                 <td>|r| &gt; 0.5 with orbital velocity</td>
-                <td>Velocity-dependent screening length</td>
+                <td>Phenomenological hypothesis: velocity-modulated screening boundary; pending dynamical derivation</td>
                 <td>|r| &lt; 0.3 or wrong phase</td>
             </tr>
             <tr>
                 <td>CMB alignment</td>
                 <td>&lt; 30° from CMB dipole</td>
-                <td>Cosmic rest frame defines field gradient</td>
+                <td>Phenomenological hypothesis: alignment with cosmological drift gradient; pending full inhomogeneous solution</td>
                 <td>&gt; 60° separation</td>
             </tr>
         </tbody>

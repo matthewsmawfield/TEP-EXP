@@ -173,31 +173,41 @@
     <table class="data-table">
         <thead>
             <tr>
-                <th>Sector</th>
-                <th>Effect on Flight Time</th>
+                <th>Sector / Channel</th>
+                <th>Effect on Observable</th>
                 <th>GW170817 Constraint</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Conformal A(φ)</td>
-                <td>Cancels exactly (T<sub>γ</sub> = T<sub>GW</sub>)</td>
-                <td>Unconstrained</td>
+                <td>Conformal A(φ): Arrival Timing</td>
+                <td>Cancels identically ($T_\gamma = T_{\text{GW}}$ along shared null path)</td>
+                <td>Unconstrained by differential arrival time</td>
             </tr>
             <tr>
-                <td>Disformal B(φ)</td>
-                <td>Modifies relative speed</td>
-                <td>Δc/c bounded at few × 10<sup>−15</sup> (assumption-dependent)</td>
+                <td>Conformal A(φ): Luminosity Distance</td>
+                <td>Rescales distance ratio $d_L^{\text{GW}}/d_L^{\text{EM}} \sim A(z)$ at propagation level</td>
+                <td>Constrained in principle via standard sirens; $|A(z) - 1| \sim 0.01$ at $z \approx 0.01$ sits well within $\sim 15\%$ observational distance uncertainty</td>
+            </tr>
+            <tr>
+                <td>Disformal B(φ): Relative Speed</td>
+                <td>Modifies relative propagation speed via directional cone deformation</td>
+                <td>$|c_\gamma - c_g|/c$ bounded at few $\times 10^{-15}$ (emission-model dependent)</td>
             </tr>
         </tbody>
     </table>
     <p>
         In a two-metric framework, the conformal factor A(φ) can modify matter-sector proper-time standards 
         and thereby support spatial structure in clock residuals, while remaining invisible to single-path 
-        EM–GW arrival-time comparisons. By contrast, any disformal cone tilt sourced by B(φ) produces a 
-        differential propagation effect and is therefore directly constrained by GW170817. A residual 
+        EM–GW arrival-time comparisons. However, the conformal sector enters multi-messenger astrophysics 
+        through the distance channel: standard-siren measurements probe the luminosity-distance ratio 
+        $d_L^{\text{GW}}/d_L^{\text{EM}} \sim A(z)$. For GW170817 at $z \approx 0.0099$, the predicted conformal excursion 
+        $|A(z) - 1| \sim 0.01$ is small compared to the $\sim 15\%$ observational distance uncertainty, leaving the 
+        conformal sector unconstrained by existing single-event siren data while establishing an explicit target 
+        for future multi-messenger ensembles. By contrast, any disformal cone tilt sourced by B(φ) produces a 
+        differential propagation effect directly constrained by the GW170817 arrival-time coincidence. A residual 
         synchronization holonomy beyond modeled GR loop effects (H<sub>resid</sub>) vanishes in the 
-        conformal-only limit (B = 0) and would require non-exact structure such as B(φ) ≠ 0 or more general 
+        conformal-only limit (B = 0) and requires non-exact structure such as B(φ) ≠ 0 or more general 
         non-metricity.
     </p>
 </div>
@@ -299,7 +309,7 @@
     
     <h4>What It Cannot Test</h4>
     <ul>
-        <li>Conformal coupling A(φ) (preserves null cone)</li>
+        <li>Conformal coupling A(φ) in arrival timing (preserves null cone and cancels in $T_\gamma - T_{\rm GW}$; constrained only through distance ratio $d_L^{\rm GW}/d_L^{\rm EM}$)</li>
         <li>Common-mode time dilation along the path</li>
         <li>Spatial structure of scalar fields</li>
         <li>Synchronization holonomy (requires closed loops)</li>

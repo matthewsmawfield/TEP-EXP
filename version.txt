@@ -1,4 +1,4 @@
-v0.6 (Istanbul) — 9 September 2026 — Corpus sync and manuscript corrections
+v0.7 (Istanbul) — 13 September 2026 — Corpus sync and manuscript corrections
 
 - Synced to TEP core v0.11 (Jakarta) and updated companion manuscripts: Paper 3 → v0.6, Paper 4 → v0.7, Paper 5 → v0.6, Paper 7 → v0.4, Paper 11 → v0.9, Paper 12 → v0.6, Paper 13 → v0.5, Paper 16 → v0.3, Paper 29 → v0.3; added Papers 30, 31, and 32. Self-citations in the References section updated to match.
 - Completed the "active-shear dilute regime" terminology replacement throughout the manuscript (v0.5 applied it only to the abstract and light propagation tests; v0.6 extends to the introduction and methodology).
