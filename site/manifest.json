@@ -100,7 +100,10 @@
   "short_name": "TEP-EXP",
   "paper_number": "9",
   "author": "Matthew Lukin Smawfield",
-  "version": "v0.7 (Istanbul)",
+  "version": "v0.8 (Istanbul)",
   "codename": "Istanbul",
-  "date": "13 September 2026"
+  "first_published": "31 December 2025",
+  "last_updated": "30 September 2026",
+  "date": "30 September 2026",
+  "doi": "10.5281/zenodo.18109760"
 }

@@ -164,7 +164,7 @@
         <li><strong>Area/path-dependent:</strong> The leading synchronization kernel is $\delta\tilde{\sigma}_\mu \simeq - \frac{B M_{\rm Pl}^2}{A^2\beta_A^2} (u\cdot\Sigma)P_\mu^\nu\Sigma_\nu$ (depends on loop flux, observer motion, and path geometry)</li>
         <li><strong>Field-gradient dependent:</strong> Proportional to scalar field gradient and disformal coupling</li>
         <li><strong>Geometry:</strong> Optimized by large vertical or orbital loops sampling field gradients</li>
-        <li><strong>Magnitude:</strong> Order $H/T_{loop} \sim 10^{-18}$–$10^{-16}$ in the forecasts considered here (model- and geometry-dependent)</li>
+        <li><strong>Magnitude:</strong> The repaired conditional benchmark (Paper 0, Appendix E, R6) is $|H_{\rm resid}| \approx 4.33\times10^{-13}$ s per loop ($\sim 1.44\times10^{-12}$ fractional over a 0.3 s loop) at the stated reduced normalization $B_0 = +1$; the $10^{-18}$–$10^{-16}$ fractional window is the design sensitivity target and the common-action normalization remains to be derived</li>
     </ul>
 </div>
 
@@ -195,8 +195,11 @@
     </ul>
     
     <p>
-        This configuration maximizes sensitivity to the disformal coupling $B(\phi)$, targeting the 
-        predicted $H/T_{loop} \sim 10^{-18}-10^{-16}$ fractional holonomy.
+        This configuration maximizes sensitivity to the disformal coupling $B(\phi)$. The canonical 
+        admissible-branch prediction (Paper 0, Appendix E, R6; schematic Earth triangle) is 
+        $|H_{\rm resid}| \approx 4.33\times10^{-13}$ s per loop ($\sim 1.44\times10^{-12}$ fractional) at 
+        the stated reduced normalization $B_0 = +1$. It is a strong forward transport benchmark; the 
+        common-action normalization remains to be derived before treating it as an absolute prediction.
     </p>
 </div>
 
@@ -226,8 +229,8 @@
             </tr>
             <tr>
                 <td>Residual holonomy $H_{\rm resid}$</td>
-                <td>Order 1–100 as</td>
-                <td>$H/T_{loop} \sim 10^{-18}$–$10^{-16}$ (forecast; model-dependent)</td>
+                <td>$\approx 4.33\times10^{5}$ as at $B_0 = +1$</td>
+                <td>Paper 0 Appendix E, R6: repaired conditional $|H_{\rm resid}| \approx 4.33\times10^{-13}$ s per loop at the stated reduced normalization; model- and geometry-dependent</td>
             </tr>
             <tr>
                 <td>Required clock stability</td>
@@ -242,7 +245,7 @@
         </tbody>
     </table>
     <p>
-        Feasibility status: With current single-loop subtraction residuals ($\sim 10^2$ as), an absolute MEO triangle experiment operates as a bound-setting measurement ($|H_{\rm resid}| \lesssim 100$ as), constraining large disformal cone tilts. Isolating the predicted $0.5$–$50$ as benchmark band from the ~100 ns Sagnac background cannot be achieved via direct single-loop subtraction; it requires either an order-of-magnitude refinement in geodetic/ephemeris modeling and link non-reciprocity, or the differential multi-geometry strategy described in §8.2.5 that cancels common-mode modeling errors across matched loops.
+        Feasibility status: At the stated reduced normalization ($B_0 = +1$), the repaired conditional result $|H_{\rm resid}| \approx 4.33\times10^{-13}$ s $\approx 4.33\times10^{5}$ as lies above the current single-loop subtraction residual ($\sim 10^2$ as). A measurement or null first tests this reduced transport benchmark and its normalization; the $0.5$–$50$ as sensitivity band remains useful for the common-action completion.
     </p>
 </div>
 
@@ -291,9 +294,9 @@
             </tr>
             <tr>
                 <td><strong>TEP signal</strong></td>
-                <td><strong>0.5–50 as</strong></td>
+                <td><strong>$\approx 6\times10^{5}$ as at $B_0 = +1$ (linear in $|B_0|$)</strong></td>
                 <td><strong>Signal of Interest</strong></td>
-                <td><strong>Differential Geometry</strong></td>
+                <td><strong>Single-loop subtraction suffices at canonical normalization</strong></td>
             </tr>
         </tbody>
     </table>
@@ -434,11 +437,12 @@
         
         <li><strong>Orbital Velocity Coupling:</strong> A correlation between GNSS-derived metrics and Earth's orbital dynamics has been reported. Establishing whether this reflects physics or analysis artifacts requires independent replication with pre-specified endpoints and null tests.</li>
         
-        <li><strong>CMB Frame Alignment:</strong> Approximate alignment of an inferred anisotropy direction with the CMB dipole has been reported. This claim, if robustly replicated, would discriminate preferred-frame structure in the clock sector from standard GR expectations.</li>
+        <li><strong>Annual-Phase Direction:</strong> GNSS clock analyses recover a direction near Earth's aphelion velocity tangent, while the directed CMB-apex template is anti-phase and the Solar Apex is null. Independent, blinded replication should test this signed annual phase rather than undirected proximity to the CMB axis.</li>
         
         <li><strong>Multi-Constellation Consistency:</strong> If the signal is physical (conformal coupling 
-        to matter), it must appear identically across GPS, GLONASS, Galileo, and BeiDou. Systematic artifacts 
-        would show constellation-dependent variations.</li>
+        to matter), it must be present across GPS, GLONASS, Galileo, and BeiDou with the same covariance 
+        morphology, while product- and estimator-dependent scale variation is expected (Paper 14). Systematic 
+        artifacts would instead show constellation-dependent structure.</li>
     </ol>
     
     <p>
@@ -466,7 +470,7 @@
             <tr>
                 <td>Conformal</td>
                 <td>A(φ) clock rates</td>
-                <td>GNSS correlations, orbital coupling, CMB alignment</td>
+                <td>GNSS correlations, orbital coupling, preferred-axis recovery</td>
                 <td>Suggested in exploratory analyses; requires independent replication</td>
             </tr>
             <tr>
@@ -583,7 +587,7 @@
     <li>Correlation length of order a few × 10<sup>3</sup> km (reported example: λ ≈ few × 10<sup>3</sup> km under one estimator)</li>
     <li>Consistency across three independent analysis centers (R² = 0.92–0.97)</li>
     <li>Orbital-dynamics coupling (reported correlation with Earth's orbital velocity)</li>
-    <li>Approximate alignment with the CMB frame (reported within tens of degrees)</li>
+    <li>An annual-phase direction near Earth's aphelion velocity tangent, with the CMB apex anti-phase</li>
 </ul>
 
 <p>
@@ -633,7 +637,7 @@
 
 <ul>
     <li>Correlation length falls outside 500-20,000 km range</li>
-    <li>Correlations disappear in raw (unprocessed) data</li>
+    <li>Correlations disappear in raw data under independent minimal processing</li>
     <li>Correlations are explained by known systematic effects</li>
     <li>Different constellations show inconsistent correlation lengths</li>
     <li>Conformal-only TEP (B = 0) is not falsified by null holonomy alone; the conformal sector requires independent disconfirmation via clock-correlation or distance-structured observables</li>
@@ -668,8 +672,8 @@
 </p>
 
 <p>
-    <strong>Phase II: Environmental Screening Maps.</strong> TEP predicts that the scalar field profile $\phi(x)$ 
-    is screened by local matter density. Comparing clocks at different altitudes (sea level vs mountain vs LEO) 
+    <strong>Phase II: Environmental Screening Maps.</strong> TEP predicts that the incremental shear response $\phi(x)$
+    is suppressed where the ambient acceleration is high (enclosed $M/r^2 \gtrsim g_t/G$). Comparing clocks at different altitudes (sea level vs mountain vs LEO) 
     allows mapping the screening profile. After subtracting GR redshift, TEP predicts residual frequency shifts 
     of $10^{-19}$–$10^{-18}$ over tens of kilometers for a screening length $\lambda_{scr} \sim 10$ km.
 </p>
@@ -726,9 +730,9 @@
             </tr>
             <tr>
                 <td>Residual holonomy H<sub>resid</sub></td>
-                <td>0.5–50 as (MEO Triangle)</td>
-                <td>Unscreened disformal forecast band ($H_{\rm resid}/T_{\rm loop} \sim 10^{-18}$–$10^{-16}$; unconstrained by GW170817 cone tilts)</td>
-                <td>|H<sub>resid</sub>| &lt; 100 as (bound-setting with single-loop modeling); |H<sub>resid</sub>| &lt; 0.5 as with differential geometry</td>
+                <td>$|H_{\rm resid}| \approx 4.33\times10^{-13}$ s $\approx 4.33\times10^{5}$ as per loop ($B_0 = +1$, repaired Paper 0 R6)</td>
+                <td>Admissible-branch non-exact disformal transport; linear in $|B_0|$; sign flips under loop reversal; conformal-only limit returns exactly zero</td>
+                <td>Null at 100 as bounds $|B_0| \lesssim 1.7\times10^{-4}$; null at $10^{-18}$ fractional bounds $|B_0| \lesssim 5\times10^{-7}$</td>
             </tr>
             <tr>
                 <td>Interplanetary Closed-Loop Residual</td>
@@ -749,10 +753,10 @@
                 <td>|r| &lt; 0.3 or wrong phase</td>
             </tr>
             <tr>
-                <td>CMB alignment</td>
-                <td>&lt; 30° from CMB dipole</td>
-                <td>Phenomenological hypothesis: alignment with cosmological drift gradient; pending full inhomogeneous solution</td>
-                <td>&gt; 60° separation</td>
+                <td>Preferred-direction recovery</td>
+                <td>signed annual phase near aphelion velocity tangent; CMB apex anti-phase</td>
+                <td>Phenomenological hypothesis: preferred-axis structure along the cosmological drift gradient; pending full inhomogeneous solution</td>
+                <td>axis &gt; 60° separation</td>
             </tr>
         </tbody>
     </table>
@@ -786,7 +790,7 @@
                 <td>Triangle Holonomy</td>
                 <td>One-way closed loop (MEO)</td>
                 <td>H<sub>resid</sub> = 0</td>
-                <td>H<sub>resid</sub> ~ 50 as</td>
+                <td>H<sub>resid</sub> $\approx 4.33\times10^{-13}$ s ($\sim 4.33\times10^{5}$ as) at $B_0 = +1$</td>
             </tr>
             <tr>
                 <td>Interplanetary Closed-Loop</td>

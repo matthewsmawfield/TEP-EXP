@@ -38,13 +38,15 @@ class HTMLToMarkdownConverter {
         html = html.replace(/<div[^>]*class=["'][^"']*manuscript-section[^"']*["'][^>]*data-section=["']([^"']*)["'][^>]*>/gi, '\n\n## $1\n\n');
         
         // Convert headers
-        html = html.replace(/<h1[^>]*>(.*?)<\/h1>/gi, '\n# $1\n\n');
-        html = html.replace(/<h2[^>]*>(.*?)<\/h2>/gi, '\n## $1\n\n');
-        html = html.replace(/<h3[^>]*>(.*?)<\/h3>/gi, '\n### $1\n\n');
-        html = html.replace(/<h4[^>]*>(.*?)<\/h4>/gi, '\n#### $1\n\n');
+        html = html.replace(/<h1[^>]*>([\s\S]*?)<\/h1>/gi, '\n# $1\n\n');
+        html = html.replace(/<h2[^>]*>([\s\S]*?)<\/h2>/gi, '\n## $1\n\n');
+        html = html.replace(/<h3[^>]*>([\s\S]*?)<\/h3>/gi, '\n### $1\n\n');
+        html = html.replace(/<h4[^>]*>([\s\S]*?)<\/h4>/gi, '\n#### $1\n\n');
+        html = html.replace(/<h5[^>]*>([\s\S]*?)<\/h5>/gi, '\n##### $1\n\n');
+        html = html.replace(/<h6[^>]*>([\s\S]*?)<\/h6>/gi, '\n###### $1\n\n');
         
         // Convert paragraphs (collapse internal whitespace to avoid markdown code-block indentation)
-        html = html.replace(/<p[^>]*>(.*?)<\/p>/gis, (match, inner) => {
+        html = html.replace(/<p\b[^>]*>(.*?)<\/p>/gis, (match, inner) => {
             const cleaned = inner.replace(/\s+/g, ' ').trim();
             return `${cleaned}\n\n`;
         });
@@ -81,7 +83,8 @@ class HTMLToMarkdownConverter {
         html = html.replace(/<blockquote[^>]*>(.*?)<\/blockquote>/gi, '\n> $1\n\n');
         
         // Convert code blocks
-        html = html.replace(/<pre[^>]*><code[^>]*>(.*?)<\/code><\/pre>/gi, '\n```\n$1\n```\n\n');
+        html = html.replace(/<pre[^>]*>\s*<code[^>]*>([\s\S]*?)<\/code>\s*<\/pre>/gi, '\n```\n$1\n```\n\n');
+        html = html.replace(/<pre[^>]*>([\s\S]*?)<\/pre>/gi, '\n```\n$1\n```\n\n');
         html = html.replace(/<code[^>]*>(.*?)<\/code>/gi, '`$1`');
         
         // Convert line breaks
@@ -128,15 +131,15 @@ class HTMLToMarkdownConverter {
         
         // Restore MathJax expressions
         mathExpressions.forEach((expr, index) => {
-            html = html.replace(`__MATH_EXPRESSION_${index}__`, expr);
+            html = html.replace(`__MATH_EXPRESSION_${index}__`, () => expr);
         });
         
         // Restore sub/sup tags
         subTags.forEach((inner, index) => {
-            html = html.replace(`__SUB_${index}__`, `<sub>${inner}</sub>`);
+            html = html.replace(`__SUB_${index}__`, () => `<sub>${inner}</sub>`);
         });
         supTags.forEach((inner, index) => {
-            html = html.replace(`__SUP_${index}__`, `<sup>${inner}</sup>`);
+            html = html.replace(`__SUP_${index}__`, () => `<sup>${inner}</sup>`);
         });
         
         // Decode HTML entities
@@ -159,7 +162,11 @@ class HTMLToMarkdownConverter {
         html = html.replace(/&sigma;/g, 'σ');
 
         // Remove leading indentation on every line (prevents accidental markdown code blocks)
-        html = html.replace(/^[ \t]+/gm, '');
+        let inFence = false;
+        html = html.split('\n').map((line) => {
+            if (line.trimStart().startsWith('```')) inFence = !inFence;
+            return inFence ? line : line.replace(/^[ \t]+/, '');
+        }).join('\n');
         
         // Clean up whitespace
         html = html.replace(/\n\s*\n\s*\n/g, '\n\n');
@@ -223,10 +230,10 @@ class HTMLToMarkdownConverter {
         const version = versionMatch ? versionMatch[1]
             .replace(/<[^>]+>/g, '')
             .replace(/^Version:\s*/i, '')
-            .trim() : 'v0.6 (Istanbul)';
+            .trim() : 'v0.8 (Istanbul)';
         
         const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>(.*?)<\/div>/i);
-        const date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 31 December 2025 · Last updated: 9 September 2026';
+        const date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 31 December 2025 · Last updated: 30 September 2026';
         
         const doiMatch = html.match(/DOI:\s*<a[^>]*href=["']([^"']*)["'][^>]*>\s*([^<]*?)\s*<\/a>/i);
         const doi = doiMatch ? doiMatch[2] : '[DOI]';
@@ -296,7 +303,7 @@ class HTMLToMarkdownConverter {
             const markdown = this.buildMarkdownDocument(metadata, markdownContent);
             
             // Write to file
-            const outputPath = path.join(__dirname, '..', '9-TEP-EXP-v0.7-Istanbul.md');
+            const outputPath = path.join(__dirname, '..', '9-TEP-EXP-v0.8-Istanbul.md');
             fs.writeFileSync(outputPath, markdown, 'utf8');
 
             // Keep the shared collection archive (../manuscripts/) in sync
@@ -335,20 +342,17 @@ class HTMLToMarkdownConverter {
      * Build the complete markdown document with metadata
      */
     buildMarkdownDocument(metadata, content) {
-        const now = new Date();
-        const timestamp = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-        
         // Clean up the title to remove the author part
         const cleanTitle = metadata.title.replace(' | Matthew Lukin Smawfield', '');
         
-        // Format date: keep original publish date, add update date
-        let formattedDate = metadata.date;
-        if (formattedDate.includes('First published:')) {
-            formattedDate = formattedDate.replace('First published: ', '');
-        }
-        // Extract just the original date part before any separator
-        const dateParts = formattedDate.split(' · ');
+        // Format date: keep original publish and update dates
+        const dateParts = metadata.date
+            .replace(/^First published:\s*/i, '')
+            .split(/\s*[·|]\s*/);
         const originalDate = dateParts[0].trim();
+        const timestamp = (dateParts[1] || '30 September 2026')
+            .replace(/^(?:Last updated|Updated):\s*/i, '')
+            .trim();
         
         return `# ${cleanTitle}
 **${metadata.author}**

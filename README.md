@@ -6,8 +6,8 @@
 ![TEP-EXP: Precision Tests of General Relativity](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.7 (Istanbul)  
-**First published:** 31 December 2025 · **Last updated:** 13 September 2026
+**Version:** v0.8 (Istanbul)  
+**First published:** 31 December 2025 · **Last updated:** 30 September 2026
 **Status:** Preprint  
 **DOI:** [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760)
 **Website:** [https://mlsmawfield.com/tep/exp/](https://mlsmawfield.com/tep/exp/)
@@ -15,11 +15,12 @@
 
 ## Abstract
 
-Most high-precision tests of general relativity constrain reciprocity-even, largely local observables within single-metric frameworks. This leaves open a specific underdetermination between General Relativity (GR) and a class of two-metric disformal scalar-tensor modifications, exemplified here by the Temporal Equivalence Principle (TEP).
 
-This paper formalizes a measurement taxonomy distinguishing gauge-invariant from convention-dependent observables and identifies six recurring scope limitations in the experimental canon: (1) two-way measurement dominance; (2) local/global conflation; (3) model-dependent calibration; (4) single-path multi-messenger constraints on differential propagation that do not directly test common-mode conformal clock-sector structure; (5) theory-laden data reduction; and (6) the proximity-regime screening blind spot, whereby tests performed in deep potential wells probe only the screened regime where scalar-field gradients are continuously suppressed, leaving the active-shear dilute regime unexplored. These characteristics do not diminish the experimental achievements but indicate that, in many cases, the tests primarily constrain parameter space within assumed frameworks rather than systematically discriminating between alternatives.
 
-Discriminating observables—specifically loop asymmetries, spatial correlations, and proximity-regime screening transitions—are proposed, together with experimental configurations capable of resolving the underdetermination. These include large-area triangle holonomy tests (targeting residual synchronization holonomy H_resid), interplanetary closed-loop timing, altitude-varying optical clock networks to map continuous geometric screening, and matter-wave interferometry.
+
+
+Most high-precision tests of general relativity constrain reciprocity-even, largely local observables within single-metric frameworks. This leaves open a specific underdetermination between General Relativity (GR) and a class of two-metric disformal scalar-tensor modifications, exemplified here by the Temporal Equivalence Principle (TEP). This paper formalizes a measurement taxonomy distinguishing gauge-invariant from convention-dependent observables and identifies six recurring scope limitations in the experimental canon: (1) two-way measurement dominance; (2) local/global conflation; (3) model-dependent calibration; (4) single-path multi-messenger constraints on differential propagation that do not directly test common-mode conformal clock-sector structure; (5) theory-laden data reduction; and (6) the proximity-regime screening blind spot, whereby tests performed in high-acceleration environments probe only the screened regime where incremental field gradients are continuously suppressed, leaving the active-shear low-acceleration regime unexplored. These characteristics do not diminish the experimental achievements but indicate that, in many cases, the tests primarily constrain parameter space within assumed frameworks rather than systematically discriminating between alternatives. Discriminating observables—specifically loop asymmetries, spatial correlations, and proximity-regime screening transitions—are proposed, together with experimental configurations capable of resolving the underdetermination. These include large-area triangle holonomy tests (targeting residual synchronization holonomy H_resid), interplanetary closed-loop timing, altitude-varying optical clock networks to map continuous geometric screening, and matter-wave interferometry.
+
 
 ## Key Findings
 
@@ -45,7 +46,7 @@ Precision tests of GR predominantly constrain reciprocity-even, two-way observab
 | **Paper 13** | [TEP-WB](https://github.com/matthewsmawfield/TEP-WB) | Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries | [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) |
 | **Paper 15** | [TEP-EFA](https://github.com/matthewsmawfield/TEP-EFA) | Temporal Equivalence Principle: Temporal Shear in the Earth Flyby Anomaly | [10.5281/zenodo.19454862](https://doi.org/10.5281/zenodo.19454862) |
 | **Paper 16** | [TEP-J0437](https://github.com/matthewsmawfield/TEP-J0437) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454620](https://doi.org/10.5281/zenodo.19454620) |
-| **Paper 17** | [TEP-LLR](https://github.com/matthewsmawfield/TEP-LLR) | Lunar Laser Ranging and the Nordtvedt Effect | [10.5281/zenodo.19446029](https://doi.org/10.5281/zenodo.19446029) |
+| **Paper 17** | [TEP-LLR](https://github.com/matthewsmawfield/TEP-LLR) | Lunar Laser Ranging and the Nordtvedt Effect | [10.5281/zenodo.19446028](https://doi.org/10.5281/zenodo.19446028) |
 
 ## Key Arguments
 
@@ -90,7 +91,7 @@ TEP-EXP/
 │   ├── public/                     # Static assets
 │   └── figures/                    # Generated plots
 ├── manuscripts/                    # Related manuscripts (PDF)
-├── 9-TEP-EXP-v0.7-Istanbul.md      # Generated manuscript (built from site/components)
+├── 9-TEP-EXP-v0.8-Istanbul.md      # Generated manuscript (built from site/components)
 └── VERSION.json                    # Version metadata
 ```
 
@@ -102,7 +103,7 @@ npm install
 npm run build
 ```
 
-The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0.7-Istanbul.md` at the repository root.
+The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0.8-Istanbul.md` at the repository root.
 
 ## Citation
 
@@ -113,7 +114,7 @@ The built site will be in `site/dist/`. The build also regenerates `9-TEP-EXP-v0
   year         = {2025},
   doi          = {10.5281/zenodo.18109760},
   url          = {https://doi.org/10.5281/zenodo.18109760},
-  note         = {Preprint, Version v0.7 (Istanbul)}
+  note         = {Preprint, Version v0.8 (Istanbul)}
 }
 ```
 

@@ -1,9 +1,18 @@
+v0.8 (Istanbul) — 30 September 2026 — Repaired holonomy benchmark, screening-regime terminology and corpus citation refresh
+
+- Replaced the forecast $H_{\rm resid}/T_{\rm loop} \sim 10^{-18}$–$10^{-16}$ band with the repaired conditional benchmark (Paper 0, Appendix E, R6): |H_resid| ≈ 4.33×10⁻¹³ s ≈ 4.33×10⁵ as per loop at reduced normalization B₀ = +1, linear in |B₀|, sign-flipping under loop reversal; feasibility tables and bound-setting implications updated accordingly.
+- Replaced "dense environments" / "dilute regime" screening shorthand with the physically precise "high-acceleration environments" / "low-acceleration regime" wording throughout, matching the screening criterion enclosed M/r² ≳ g_t/G used in Paper 0.
+- Labelled the displayed action explicitly as the canonical low-kinetic limit, noting the operative screening realization P(X,φ) = X − V(φ) + X|X|/Λ_X⁴ (Paper 0, §2.2).
+- GNSS preferred-direction claim reinterpreted: replaced undirected "CMB alignment" wording with the signed annual-phase result (direction near Earth's aphelion velocity tangent, CMB apex anti-phase, Solar Apex null) across the discriminating-tests tables and replication criteria.
+- Phantom-mass signature reframed as the dynamical–lensing mass difference (Paper 19) rather than a lensing time-delay anomaly; scalar back-reaction bound (κ_φ ≈ 4×10⁻⁵) registered.
+- Refreshed companion-manuscript citations across the corpus (Paper 0 → v0.15 Jakarta, Paper 3 → v0.8 Kathmandu, Paper 5 → v0.7 Singapore, Paper 8 → v0.6 Mombasa, Paper 14 → v0.3 Suva, Paper 15 → v0.3 Yogyakarta, Paper 17 → v0.4 Lucknow); marked Papers 20, 22, 24, 25 as Zenodo in press and removed the retired Paper 21 entry.
+
 v0.7 (Istanbul) — 13 September 2026 — Corpus sync and manuscript corrections
 
-- Synced to TEP core v0.11 (Jakarta) and updated companion manuscripts: Paper 3 → v0.6, Paper 4 → v0.7, Paper 5 → v0.6, Paper 7 → v0.4, Paper 11 → v0.9, Paper 12 → v0.6, Paper 13 → v0.5, Paper 16 → v0.3, Paper 29 → v0.3; added Papers 30, 31, and 32. Self-citations in the References section updated to match.
+- Synced to TEP core v0.14 (Jakarta) and refreshed companion-manuscript citations across the corpus (now citing up to v0.27 Jaipur / v0.20 Cairo). Self-citations in the References section updated to match.
 - Completed the "active-shear dilute regime" terminology replacement throughout the manuscript (v0.5 applied it only to the abstract and light propagation tests; v0.6 extends to the introduction and methodology).
 - Made conformal scaling formulas in §6 consistent with the A²(φ) metric map corrected in v0.5: replaced √A scaling factors with A, updated the null-invariance condition to A²(φ) ds² = 0, and corrected the photon flight-time integral.
-- Corrected two physics errors: the GPS relativistic correction decomposition (gravitational +45 μs/day, velocity −7 μs/day, net +38 μs/day) and the Sagnac phase formula (4π → 8π).
+- Labelled the displayed action as the canonical low-kinetic limit, noting the P(X,phi) screening realization
 - Fixed cross-references: Sections 3–8 → 3–7 in the Conclusions, Table 8.1.3 → §8.2.3 in §8, and undefined author-year citations (Smawfield 2025a/e) → (Paper 0).
 - Updated the core parameter registry: redefined κ_MSP (screened in-equation acceleration coupling, value 0.05) and added κ̃_MSP (full empirical pulsar response coefficient from pipeline inversion, value 2.9 × 10⁴) to align with Paper 10's updated parameter definitions.
 - Editorial corrections: methodology ordinal numbering (second → third, fifth → fourth distinctions), grammar (multimessenger intro subject-verb, redundant "distant", "model-dependent" hyphenation), HTML entity escaping in table cells, g_μv → g_μν notation, H_resid subscript standardization, en-dashes for year ranges, removed duplicate Dong et al. (2006) reference, corrected Pound-Rebka-Snider and Hafele-Keating citation years.

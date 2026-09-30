@@ -1,8 +1,9 @@
 {
-  "version": "0.7",
+  "version": "0.8",
   "codename": "Istanbul",
   "description": "Paper 9: What Do Precision Tests of General Relativity Actually Measure?",
-  "date": "2026-09-13",
+  "date": "2026-09-30",
   "paper": "9",
-  "previous_version": "0.6"
+  "doi": "10.5281/zenodo.18109760",
+  "previous_version": "0.7"
 }
