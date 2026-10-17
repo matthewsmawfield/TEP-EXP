@@ -63,27 +63,30 @@
 
 <p>
     Understanding why GW170817 does not directly constrain TEP's conformal sector requires examining the two-metric 
-    structure explicitly. This section provides the mathematical derivation that shows 
-    conformal coupling cancels in arrival-time comparisons.
+    structure explicitly. The following conformal derivation presents the canonical isotropic shorthand for the 
+    common-mode cancellation; the operative Paper 0 (v0.16) realization is the resolved $(A_{\rm loc}, A_{\rm sp})$ 
+    preferred-foliation tensor branch (§2.1, §6.3.1), on which electromagnetic waves and transverse-traceless gravitons 
+    share the identical principal wave operator $\Box_{\rm TEP} \equiv -(N_{\rm TEP}c)^{-2}\partial_t^2 + A_{\rm sp}^{-2}(t,\mathbf{x})\gamma^{kl}\partial_k\partial_l$ 
+    at $B = 0$, enforcing $c_{\rm GW}(t,\mathbf{x}) = c_\gamma(t,\mathbf{x})$ at every spacetime event.
 </p>
 
 <div class="key-concept">
-    <h4>The Two-Metric Structure</h4>
+    <h4>The Two-Metric Structure (Isotropic Conformal–Disformal Shorthand and Resolved Foliation)</h4>
     <p>
-        In scalar-tensor theories like TEP, spacetime has two metrics:
+        In the isotropic conformal–disformal shorthand of TEP, the two metrics take the form:
     </p>
     
     <p>Gravitational metric (Einstein frame):</p>
     <div class="equation">$$g_{\mu\nu}^{\text{GW}} = g_{\mu\nu}$$</div>
-    <p>Gravitational waves propagate on null geodesics of this metric.</p>
+    <p>In the canonical Einstein-frame shorthand, gravitational waves propagate on null geodesics of $g_{\mu\nu}$.</p>
     
-    <p>Electromagnetic metric (Jordan frame):</p>
+    <p>Electromagnetic / matter metric (Jordan frame):</p>
     <div class="equation">$$g_{\mu\nu}^{\text{EM}} = A^2(\phi) g_{\mu\nu}^{\text{GW}} + B(\phi) \nabla_\mu\phi \nabla_\nu\phi$$</div>
-    <p>Photons propagate on null geodesics of this metric.</p>
+    <p>Photons propagate on null geodesics of $\tilde{g}_{\mu\nu}$. In the resolved preferred-foliation decomposition of Paper 0 (§2.2, Step 80), $\tilde{g}_{\mu\nu} = -A_{\rm loc}^2(u_{\rm grav})U_\mu U_\nu + A_{\rm sp}^2(u_{\rm drift})\Pi_{\mu\nu} + B(\phi)\Pi_\mu^\alpha\Pi_\nu^\beta\nabla_\alpha\phi\nabla_\beta\phi$, where both photons and TT gravitons propagate on the shared temporal-lapse cone with local coordinate speed $c_{\rm eff}(t,\mathbf{x}) = c\,N_{\rm TEP}(\mathbf{x})/A_{\rm sp}(t,\mathbf{x})$ when $B(\phi)=0$.</p>
     
     <p>
-        The conformal factor A(φ) = exp(β<sub>A</sub>φ/M<sub>Pl</sub>) rescales the metric uniformly. 
-        The disformal factor B(φ) introduces direction-dependent modifications.
+        The conformal factor A(φ) = exp(β<sub>A</sub>φ/M<sub>Pl</sub>) rescales the clock rate uniformly, while 
+        the disformal factor B(φ) introduces direction-dependent light-cone modifications between the two sectors.
     </p>
 </div>
 
@@ -233,19 +236,22 @@
 
 <p>
     Gravitational lensing produces multiple images that traverse different paths through 
-    the scalar field. The conformal sector contributes nothing to inter-image observables: 
-    $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}$ preserves null curves for any $A(x,t)$, and the 
-    static conformal contribution to arrival times telescopes identically to its endpoints 
-    (Paper 19, Step 56). Scalar backreaction on the photon path is likewise foreclosed 
-    ($\kappa_\phi\approx4\times10^{-5}$, $\sim2\times10^3$ below the required phantom mass; 
-    Paper 19, Step 61).
+    the scalar field. Under isotropic conformal rescaling $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}$,
+    where spatial rulers stretch by $A^2(\phi)$ alongside clocks, $A^2(\phi(x))$ cancels out
+    of $d\tilde s^2=0$ at every intermediate point along the ray (Paper 19, Step 56), leaving
+    only the Planck-suppressed scalar stress tensor ($\kappa_\phi\simeq6.5\times10^{-6}$ on the
+    selected two-branch sector; Paper 19, Step 64). Under the unstretched-space temporal metric
+    $\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$) — where the $(3+1)$ ADM spacetime lapse rescales as $N_{\rm TEP}(x)=A(\phi(x))N_{\rm GR}(x)$ while the spatial 3-metric $\gamma_{ij}$ remains unstretched —
+    intermediate clock rates between source and observer do not cancel: every point $x$ along
+    the ray contributes its local temporal depth $-\beta_A u_{\rm grav}(x)$ directly to the refractive
+    index $n(x)\simeq1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)$, reproducing the non-baryonic Fermat delay
+    and arrival order of SN Refsdal ($+330.9$ d sheet, $+221.6$–$443.2$ d 3-D ray; Paper 19,
+    Step 64) and the Bullet Cluster galaxy-peak convergence (Paper 4, Step 02) from baryons and
+    the selected two-branch action $P_{,X}=k\sqrt\xi+2\xi$, while preserving $c_{\rm GW}=c_\gamma$ identically on the shared temporal-lapse cone.
 </p>
 
 <p>
-    TEP's multipath signature is therefore not a delay anomaly but the phantom mass itself: 
-    the Temporal Shear acts on matter trajectories but not on photon paths, so 
-    in low-acceleration environments the mass inferred from dynamics exceeds the mass 
-    inferred from lensing — the dynamical–lensing mass difference (Paper 19).
+    Under the unstretched-space temporal metric, TEP's multipath signature combines baryon-sourced intermediate temporal refraction ($\Phi_{\rm lens} = \Phi_N + \frac{1}{2}c^2\beta_A u_{\rm grav}$) with a testable post-Newtonian slip between dynamical and lensing mass inferences ($M_{\rm dyn} &gt; M_{\rm lens}^{\rm u.s.}$ in unscreened low-acceleration environments where $\gamma_{\rm SMP} = 1/(1+2\beta_A^2 y_{\rm eff}) &lt; 1$; Paper 0 Step 80, Paper 19).
 </p>
 
 <h5>6.3.2 Statistical Correlations</h5>
